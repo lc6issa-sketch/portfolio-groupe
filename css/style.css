@@ -1,0 +1,144 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d9e2b3;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #4b4f1f;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box img {
+  width: 45px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ===== SECTION PRESENTATION ===== */
+#presentation {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #7b8151;
+}
+
+#presentation h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#presentation p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4b4f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffd700;
+  color: #4b4f1f;
+}
+
+/* ===== SECTION EQUIPE ===== */
+#equipe {
+  background-color: #d9e2b3;
+  color: #4b4f1f;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+#equipe h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARTE */
+.card {
+  background-color: #4b4f1f;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #4b4f1f;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+
+}
