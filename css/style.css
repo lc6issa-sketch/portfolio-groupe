@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color: #d9e2b3;
+  margin: 0;
+  padding: 0;
+  background-color: #5f6f52;
   color: white;
 }
 
@@ -20,13 +22,13 @@ body {
   align-items: center;
 }
 
-.logo-box {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo-box img {
+.logo img {
   width: 45px;
 }
 
@@ -51,7 +53,6 @@ nav a:hover {
 #presentation {
   text-align: center;
   padding: 80px 20px;
-  background-color: #7b8151;
 }
 
 #presentation h2 {
@@ -85,8 +86,6 @@ nav a:hover {
 
 /* ===== SECTION EQUIPE ===== */
 #equipe {
-  background-color: #d9e2b3;
-  color: #4b4f1f;
   padding: 60px 40px;
   text-align: center;
 }
@@ -97,9 +96,9 @@ nav a:hover {
 }
 
 /* GRID */
-.team-container {
+.conteneur-groupe {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
 }
 
@@ -119,7 +118,7 @@ nav a:hover {
 }
 
 .card h3 {
-  margin-top: 15px;
+  margin-top: 150px;
   font-size: 18px;
 }
 
@@ -141,4 +140,11 @@ footer {
   padding: 20px;
   font-size: 14px;
 
+}
+.conteneur-groupe {
+   display: grid;
+   
+}
+.fade-in-text {   /* ❌ ERREUR */
+   opacity: 0;
 }
