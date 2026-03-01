@@ -141,3 +141,7 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+/*test*/
+body{ 
+    border: 10px solid blue;
+}
