@@ -3,12 +3,22 @@ body{
     min-height: 100vh;
     background: linear-gradient( #AEB784, #4D513A, #4D514A );
 }
-.nav{
-    padding-left: 250px;
+.ndiv{
+    width:70%;
+    height: 70px;
     margin-top: 20px;
+    margin-left: 190px;
+}
+.nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
     a{
         text-decoration: none; 
         color: antiquewhite;
+    }
+    button{
+      padding: 12px 60px;
     }
     /*button retour*/
     .back{
@@ -16,12 +26,14 @@ body{
         position: relative;
         border: none;
         cursor: pointer;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
         border-radius: 15px;
-        padding: 12px 25px 12px 20px;
         transition: all 0.3s ease;
         gap: 10 px;
        .btn_text{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: antiquewhite;
         position: relative;
@@ -29,7 +41,7 @@ body{
         transition: color 0.3s ease;
        }
        .btn_icon{
-        font-size: 24px;
+        font-size: 16px;
         color: antiquewhite;
         position: relative;
         z-index: 2;
@@ -67,10 +79,9 @@ body{
         border: none;
         cursor: pointer;
         border-radius: 15px;
-        padding: 12px 25px 12px 20px;
         transition: all 0.3s ease;
         gap: 10 px;
-        margin-left: 780px;
+        margin-left: 510px;
         .btn_text2{
         font-size: 16px;
         font-weight: 500;
@@ -160,6 +171,7 @@ body{
         position: absolute;
         width:35%;
         min-height: 200vh;
+        display: flex;
         background: #4D513A;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px; 
@@ -167,37 +179,41 @@ body{
     }
     .subtitle{
          position: absolute;
-         margin-top: 120%;
+         margin-top: 130%;
+         flex-direction: column;
          width: 360px;
          height: 900px;
-         .fol1{
-        margin-bottom: 20px;
+        .fol1{
+        font-size:18px ;
+        display: flex;
         margin-left: 10px;
         color: rgb(233, 208, 153);
-        gap: 40px;
+      
         }
         .fol2{
-        margin-bottom: 20px;
+        font-size:18px ;
+        display: flex;
         margin-left: 10px;
         color: rgb(199, 184, 152);
-        gap: 40px;
-        }.fol3{
-        margin-bottom: 20px;
+        }
+        .fol3{
+        font-size:18px ;
+        display: flex;
         margin-left: 10px;
         color:  rgb(199, 184, 152);
-        gap: 40px;
-        }.fol4{
-        margin-bottom: 20px;
+        }
+        .fol4{
+        font-size:18px ;
+        display: flex;
         margin-left: 10px;
         color:  rgb(199, 184, 152);
-        gap: 40px;
         }
         .divcord{
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             .icon{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
             background: #AEB784;
             padding: 5px;
@@ -211,9 +227,8 @@ body{
             .li1{
             display: flex;
             align-items: center;
-            gap: 15px;
             list-style: none;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
             color: rgb(233, 208, 153) ;
             font-size: 20px ;
             }
@@ -221,15 +236,16 @@ body{
             margin-bottom: 0;
             }
             .cord{
-            font-size: 20px ;
+            font-size: 16px ;
             font-weight: 500;
+            margin-left: 10px;
             color: rgb(233, 208, 153) ;
             line-height: 1.4;
            }
         }
         .divcomp{
               width: 100%;
-              margin-bottom: 30px;
+              margin-bottom: 20px;
             .ul2{
             padding: 0;
             margin-left: 15px;
@@ -237,12 +253,11 @@ body{
             .li2{
             display: flex;
             align-items: center;
-            gap: 15px;
             margin-bottom: 5px;
             color: rgb(233, 208, 153) ;
-            font-size: 18px ;
+            font-size: 16px ;
             strong{
-                font-size: 40px;
+                font-size: 35px;
                 color: #1a1919;
             }
             }
@@ -252,7 +267,7 @@ body{
            }
            .divqua{
               width: 100%;
-              margin-bottom: 30px;
+              margin-bottom: 20px;
             .ul3{
             padding: 0;
             margin-left: 15px;
@@ -260,12 +275,11 @@ body{
             .li3{
             display: flex;
             align-items: center;
-            gap: 15px;
             margin-bottom: 5px;
             color: rgb(233, 208, 153) ;
-            font-size: 18px ;
+            font-size: 16px ;
             strong{
-                font-size: 40px;
+                font-size: 35px;
                 color: #1a1919;
             }
             }
@@ -275,7 +289,7 @@ body{
            }
            .divlan{
               width: 100%;
-              margin-bottom: 30px;
+              margin-bottom: 20px;
             .ul4{
             padding: 0;
             margin-left: 15px;
@@ -283,12 +297,11 @@ body{
             .li4{
             display: flex;
             align-items: center;
-            gap: 15px;
             margin-bottom: 5px;
             color: rgb(233, 208, 153) ;
-            font-size: 18px ;
+            font-size: 16px ;
             strong{
-                font-size: 40px;
+                font-size: 35px;
                 color: #1a1919;
             }
             }
@@ -314,8 +327,10 @@ body{
             margin-left: 20%;
             text-decoration: underline;
             text-underline-offset: 8px;
+            display: flex;
         }
         p{
+            display: flex;
             margin-left: 20%;
         }
     }
@@ -330,8 +345,10 @@ body{
         border-radius: 50%;
         z-index: 3;
         .profil{
-            width: 189px;
-            height: 189px;
+            width: 177px;
+            height: 177px;
+            margin-top: -1%;
+            margin-left: -1%;
             border-radius: 50%;
         }
     }
@@ -341,15 +358,33 @@ body{
         min-height: 144vh;
         margin-top: 38.2%;
         margin-left: 35%;
+        display: flex;
+        flex-direction: column;
         z-index: 4;
         padding: 40px 50px 40px 40px;
         box-sizing: border-box;
         .centralh {
-        font-size: 30px;
+        padding-top: 40px;
+        font-size: 25px;
         font-weight: bold;
         color:  #66695a;
-        margin: 40px 0 30px 0;
         letter-spacing: 1px;
+        }
+        .centralh1 {
+        font-size: 25px;
+        font-weight: bold;
+        color:  #66695a;
+        letter-spacing: 1px;
+        }
+        .Sp{
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .dv1{
+            padding-top: 0;
+        }
+        .div{
+            padding-top: 0;
         }
         .centralh:first-of-type {
          margin-top: 0;
@@ -359,15 +394,12 @@ body{
         align-items: center;
         justify-content: space-between;
         .ch2 {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         color:black;
-        margin: 25px 0 5px 0;
-        
-      
         }
         .period{
-            padding-top: 24px;
+            padding-top: 10px;
         }
         }
       
@@ -376,7 +408,6 @@ body{
         margin-left: 120px;
         font-weight: 500;
         font-size: 16px;
-        background:  #aab18b;
         padding: 3px 12px;
         border-radius: 15px;
         }
@@ -395,21 +426,20 @@ body{
         }
         li {
         padding-left: 25px;
-        gap: 15px;
         display: flex;
+         font-size: 16px;
         align-items: center;
         /* position: relative; */
         strong{
-        font-size: 40px;
+        font-size: 30px;
         color: #1a1919;
-       
-            }
-        font-size: 16px;
+        }
+        font-size: 12px;
         line-height: 1.5;
         }
         li::before {
         content: "";
-        font-size: 20px;
+        font-size: 16px;
         position: absolute;
         left: 5px;
         top: -2px;
@@ -422,5 +452,353 @@ body{
         font-size: 14px;
         }
 
+    }
+    
+}
+/* Grands écrans (1200px et moins) */
+@media screen and (max-width: 1200px) {
+    .nav {
+        margin-left: 100px;
+        margin-right: 500px;
+    }
+    
+    .nav .download {
+        margin-left: 400px;
+    }
+    
+    .Folio {
+        width: 85%;
+    }
+    
+    .spacename {
+        margin-left: 25%;
+        width: 75%;
+    }
+    
+    .spacename h1, 
+    .spacename h2, 
+    .spacename p {
+        margin-left: 15%;
+    }
+}
+
+/* Écrans moyens (992px et moins) */
+@media screen and (max-width: 992px) {
+    .nav {
+        margin-left: 50px;
+        margin-right: 200px;
+    }
+    
+    .nav .download {
+        margin-left: 200px;
+    }
+    
+    .Folio {
+        width: 90%;
+    }
+    
+    .leftside {
+        width: 40% !important;
+    }
+    
+    .subtitle {
+        width: 90% !important;
+        margin-left: 5%;
+    }
+    
+    .subtitle .fol1,
+    .subtitle .fol2,
+    .subtitle .fol3,
+    .subtitle .fol4 {
+        font-size: 16px !important;
+    }
+    
+    .spacename {
+        margin-top: 12%;
+        margin-left: 28%;
+        width: 72%;
+        height: 280px;
+    }
+    
+    .spacename h1 {
+        font-size: 24px;
+    }
+    
+    .spacename h2 {
+        font-size: 20px;
+    }
+    
+    .circular {
+        width: 160px;
+        height: 160px;
+        margin-top: 16%;
+        margin-left: 16%;
+    }
+    
+    .circular .profil {
+        width: 159px;
+        height: 159px;
+        margin-top: 16%;
+        margin-left: 16%;
+    }
+    
+    .centrale {
+        padding: 30px;
+    }
+    
+    .centrale p {
+        margin-left: 60px;
+    }
+}
+
+/* Tablettes (768px et moins) */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 15px;
+    }
+    
+    .nav .download {
+        margin-left: 0;
+    }
+    
+    .Folio {
+        width: 95%;
+        min-height: auto;
+    }
+    
+    /* Passage en layout vertical */
+    .leftside {
+        position: relative !important;
+        width: 100% !important;
+        min-height: auto !important;
+        border-radius: 20px 20px 0 0 !important;
+    }
+    
+    .subtitle {
+        position: relative !important;
+        margin-top: 20px !important;
+        width: 90% !important;
+        height: auto !important;
+        padding-bottom: 30px;
+    }
+    
+    .spacename {
+        position: relative !important;
+        margin: 20px auto !important;
+        width: 90% !important;
+        height: auto !important;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .spacename h1,
+    .spacename h2,
+    .spacename p {
+        margin-left: 0 !important;
+        justify-content: center;
+    }
+    
+    .circular {
+        position: relative !important;
+        margin: -80px auto 20px !important;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circular .profil {
+        width: 149px;
+        height: 149px;
+    }
+    
+    .centrale {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 !important;
+        min-height: auto !important;
+        padding: 20px;
+    }
+    
+    .centrale p {
+        margin-left: 0;
+        display: block;
+    }
+    
+    .experience {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .period {
+        padding-top: 5px !important;
+    }
+    
+    .divcord .ul1,
+    .divcomp .ul2,
+    .divqua .ul3,
+    .divlan .ul4 {
+        margin-left: 0 !important;
+    }
+}
+
+/* Mobiles (576px et moins) */
+@media screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        align-items: center !important;
+        margin: 20px 10px;
+    }
+    
+    .nav .back,
+    .nav .download {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .Folio {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .circular {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .circular .profil {
+        width: 119px;
+        height: 119px;
+    }
+    
+    .spacename {
+        padding: 15px;
+    }
+    
+    .spacename h1 {
+        font-size: 20px;
+    }
+    
+    .spacename h2 {
+        font-size: 18px;
+    }
+    
+    .centrale {
+        padding: 15px;
+    }
+    
+    .centralh,
+    .centralh1 {
+        font-size: 20px !important;
+    }
+    
+    h3 {
+        font-size: 18px !important;
+        padding-left: 0 !important;
+    }
+    
+    .li1, .li2, .li3, .li4 {
+        font-size: 14px !important;
+    }
+    
+    .successM {
+        left: 20px;
+        right: 20px;
+        width: auto;
+        font-size: 14px;
+    }
+    
+    .divcord .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Très petits écrans (375px et moins) */
+@media screen and (max-width: 375px) {
+    .circular {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circular .profil {
+        width: 99px;
+        height: 99px;
+    }
+    
+    .spacename h1 {
+        font-size: 18px;
+    }
+    
+    .spacename h2 {
+        font-size: 16px;
+    }
+    
+    .centrale .centralh {
+        font-size: 18px !important;
+    }
+    
+    .li1 strong,
+    .li2 strong,
+    .li3 strong,
+    .li4 strong {
+        font-size: 25px !important;
+    }
+}
+
+/* Pour les écrans très larges */
+@media screen and (min-width: 1600px) {
+    .Folio {
+        width: 60%;
+    }
+    
+    .nav {
+        margin-left: 300px;
+        margin-right: 1200px;
+    }
+}
+
+/* Ajout pour améliorer la flexibilité */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Amélioration du bouton de téléchargement sur mobile */
+@media screen and (max-width: 768px) {
+    .nav .download {
+        margin-left: 0;
+        width: auto;
+        min-width: 200px;
+    }
+    
+    .btn_text2 {
+        white-space: nowrap;
+    }
+}
+
+/* Ajustement des listes sur mobile */
+@media screen and (max-width: 768px) {
+    .li1, .li2, .li3, .li4 {
+        flex-wrap: wrap;
+        word-break: break-word;
+    }
+    
+    .divcord, .divcomp, .divqua, .divlan {
+        width: 100%;
+    }
+}
+
+/* Animation plus fluide sur mobile */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
     }
 }
