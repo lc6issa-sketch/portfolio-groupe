@@ -78,6 +78,8 @@
     color: var(--primaryColor);
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 
 }
 
