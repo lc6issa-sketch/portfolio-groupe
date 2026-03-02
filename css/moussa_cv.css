@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -11,7 +11,7 @@ body{
     padding:40px 20px;
 }
 
-/* === BOUTONS EN HAUT === */
+/* === Les  BOUTONS EN HAUT === */
 .top-buttons{
     max-width:1100px;
     margin:0 auto 20px auto;
@@ -246,9 +246,7 @@ body{
     border-left: 3px solid #4D514A;
 }
 
-.section:last-of-type ul li strong {
-    color: #4D514A;
-}
+
 
 @media(max-width:900px){
     .cv-container{
