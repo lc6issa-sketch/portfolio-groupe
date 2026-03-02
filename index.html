@@ -1,104 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Groupe2</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+   <title>Portfolio Groupe 2</title>
+   <script src="js/script.js" defer></script>
     <!-- defer permet de charger et d’exécuter le JS après le HTML -->
-  </head>
-  <body>
-    <header>
-      <h1>Bienvenu sur notre Portfolio</h1>
-      <img src="#" alt="logo du groupe" />
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo Groupe 2">
+      <h1>Groupe 2</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
 
-      <nav>
-        <a href="#">Accueil</a>
-        <a href="#equipe">Equipe</a>
-      </nav>
-    </header>
-    <main>
-      <section id="presentation">
-        <img src="#" alt="logo du groupe" />
-        <h1>Groupe2</h1>
-        <p>
-          Une équipe passionnée de 11 développeurs et designers créatifs, unis
-          pour créer des expériences web exceptionnelles
-        </p>
-        <a href="#equipe">Decouvrez l'équipe</a>
-      </section>
-      <section id="equipe">
-        <div class="card">
-          <img src="#" alt="photo Maimouna" />
-          <h1>Maimouna Samaké</h1>
-          <p>Développeuse Full Stack</p>
-          <a href="cv-maimouna.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Issaka" />
-          <h1>Issaka Douyon</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-issaka.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Dialla" />
-          <h1>Dialla Coulibaly</h1>
-          <p>Développeuse Full Stack</p>
-          <a href="cv-dialla.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Moussa" />
-          <h1>Moussa Traoré</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-moussa.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Oumar" />
-          <h1>Oumar KANADJI</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-oumar.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Safiatou" />
-          <h1>Safiatou Broulaye SAMAKE</h1>
-          <p>Développeuse Full Stack</p>
-          <a href="cv-safiatou.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Idrissa" />
-          <h1>Idrissa GASSAMA</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-idrissa.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Ibrahima" />
-          <h1>Ibrahima SISSOKO</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-ibrahima.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Ismaïla" />
-          <h1>Ismaïla SANGARE</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-ismaïla.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo fanene" />
-          <h1>Fanene Ibrahim DIARRA</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-fanene.html" class="btn-cv">Voir CV</a>
-        </div>
-        <div class="card">
-          <img src="#" alt="photo Mahamadou" />
-          <h1>Mahamadou ALHABIBOU</h1>
-          <p>Développeur Full Stack</p>
-          <a href="cv-mahamadou.html" class="btn-cv">Voir CV</a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Groupe2 - 2026</p>
-    </footer>
-  </body>
+    <!-- section presentation -->
+    <section id="presentation">
+      <h2>Bienvenue sur notre Portfolio</h2>
+      <p>
+        Une équipe passionnée de 11 développeurs et designers créatifs,
+        unis pour créer des expériences web exceptionnelles.
+      </p>
+      <a href="#equipe" class="btn">Découvrir l'équipe</a>
+    </section>
+
+    <!-- section equipe -->
+   <section id="equipe">
+  <h2>Notre Équipe</h2>
+
+  <div class="conteneur-groupe">
+    <!-- membre 1 -->
+    <div class="card">
+      <a href="cv-maimouna.html">
+        <img src="images/maimouna.jpg" alt="Maimouna Samaké">
+      </a>
+      <h3>Maimouna Samaké</h3>
+      <p>Développeuse Full Stack</p>
+    </div>
+
+    <!-- membre 2 -->
+    <div class="card">
+      <a href="cv-issaka.html">
+        <img src="images/issaka.jpg" alt="Issaka Douyon">
+      </a>
+      <h3>Issaka Douyon</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+
+    <!-- membre 3 -->
+    <div class="card">
+      <a href="cv-dialla.html">
+        <img src="images/dialla.jpg" alt="Dialla Coulibaly">
+      </a>
+      <h3>Dialla Coulibaly</h3>
+      <p>Développeuse Full Stack</p>
+    </div>
+    <!-- membre 4 -->
+    <div class="card">
+      <a href="cv-moussa.html">
+        <img src="images/moussa.jpg" alt="Moussa Traoré">
+      </a>
+      <h3>Moussa Traoré</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 5 -->
+    <div class="card">
+      <a href="cv-oumar.html">
+        <img src="images/oumar.jpg" alt="Oumar Kanadji">
+      </a>
+      <h3>Oumar KANADJI</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 6 -->
+    <div class="card">
+      <a href="cv-safiatou.html">
+        <img src="images/safiatou.jpg" alt="Safiatou Samaké">
+      </a>
+      <h3>Safiatou Broulaye SAMAKE</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 7 -->
+    <div class="card">
+      <a href="cv-idrissa.html">
+        <img src="images/idrissa.jpg" alt="Idrissa Gassama">
+      </a>
+      <h3>Idrissa GASSAMA</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 8 -->
+    <div class="card">
+      <a href="cv-ibrahima.html">
+        <img src="images/ibrahima.jpg" alt="Ibrahima Sissoko">
+      </a>
+      <h3>Ibrahima SISSOKO</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 8 -->
+    <div class="card">
+      <a href="cv-ismaïla.html">
+        <img src="images/ismaïla.jpg" alt="Ismaïla Sangaré">
+      </a>
+      <h3>Ismaïla SANGARE</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 9 -->
+    <div class="card">
+      <a href="cv-fanene.html">
+        <img src="images/fanene.jpg" alt="Fanene Diarra">
+      </a>
+      <h3>Fanene Ibrahim DIARRA</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+    <!-- membre 10 -->
+    <div class="card">
+      <a href="cv-mahamadou.html">
+        <img src="images/mahamadou.jpg" alt="Mahamadou Alhabibou">
+      </a>
+      <h3>Mahamadou ALHABIBOU</h3>
+      <p>Développeur Full Stack</p>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer>
+    <p>Groupe 2 - 2026</p>
+  </footer>
+</body>
 </html>
