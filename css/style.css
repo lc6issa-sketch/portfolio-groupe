@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body {
   color: white;
 }
 
-/* ===== HEADER ===== */
+/* header */
 .header {
   background-color: #4b4f1f;
   padding: 15px 40px;
@@ -49,7 +48,7 @@ nav a:hover {
   color: #ffd700;
 }
 
-/* ===== SECTION PRESENTATION ===== */
+/* section presentation */
 #presentation {
   text-align: center;
   padding: 80px 20px;
@@ -84,7 +83,7 @@ nav a:hover {
   color: #4b4f1f;
 }
 
-/* ===== SECTION EQUIPE ===== */
+/* section equipe */
 #equipe {
   padding: 60px 40px;
   text-align: center;
@@ -95,14 +94,14 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
-/* GRID */
+/* grille */
 .conteneur-groupe {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
 }
 
-/* CARTE */
+/* carte */
 .card {
   background-color: #4b4f1f;
   border-radius: 15px;
@@ -127,24 +126,17 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* HOVER */
+/* hover */
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* ===== FOOTER ===== */
+/* footer */
 footer {
   background-color: #4b4f1f;
   text-align: center;
   padding: 20px;
   font-size: 14px;
 
-}
-.conteneur-groupe {
-   display: grid;
-   
-}
-.fade-in-text {   /* ❌ ERREUR */
-   opacity: 0;
 }
