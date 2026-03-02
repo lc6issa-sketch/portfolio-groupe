@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,19 +15,24 @@ body {
     background-color: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     line-height: 20px;
+    padding-top: 50px;
 }
 
 /* ===== header ===== */
 .header {
     display: flex;
     align-items: center;
-    background-color: #d9d2c1;
+    background: linear-gradient(#AEB784 29%,#4D513A 76%,#4D513A 88%);
     padding: 30px;
     margin-left: 180px;
     position: relative;
     left: -40px;
     z-index: 2;
     margin-right: -40px;
+    color: white;
+}
+ h1{
+    color: white;
 }
 
 .photo img {
@@ -44,12 +49,12 @@ body {
 }
 
 .intro h1 {
-    color: #5e8c61;
+    color: white;
     margin-bottom: 12px;
 }
 
 .intro h2 {
-    color: #6f8c6b;
+    color: white;
     margin-bottom: 25px;
 }
 
@@ -61,13 +66,13 @@ body {
 /* colonne gauche */
 .left {
     width: 30%;
-    background-color: #aab18a;
+    background-color: #6D7145;
     padding: 25px;
     color: white;
-    margin-top: -210px;
+    margin-top: -265px;
 }
 #left {
-    margin-top: 230px;
+    margin-top: 290px;
     
 }
 
@@ -94,11 +99,12 @@ body {
 .right {
     width: 65%;
     padding: 30px;
+    padding-top: 30px;
 }
 
 
 .right h3 {
-    color: #5e8c61;
+    color: #6D7145;
     margin-bottom: 15px;
     margin-top: 20px;
     font-size: 16px;
@@ -114,7 +120,7 @@ body {
 
 .experience span {
     font-size: 14px;
-    color: gray;
+    color: #41431B;
 }
 
 .experience ul {
@@ -142,13 +148,33 @@ body {
     transition: 0.3s ease;
     font-size: 14px;
 }
+/* animations */
+.right h3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
 
+.right h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #6D7145;
+    transition: width 0.3s ease;
+}
+
+.right h3:hover::after {
+    width: 100%;
+}
 /* Bouton retour */
 .retour {
-    background-color: white#2f3e46;
+    background-color: white;
     color: black;
     margin-bottom: 10px;
-    border: 2px, solid green;
+    border: 2px solid green;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 5px;
@@ -163,7 +189,7 @@ body {
     background-color: white#2f3e46;
     color: black;
     margin-bottom: 10px;
-    border: 2px, solid green;
+    border: 2px solid green;
 }
 
 .telecharger:hover {
