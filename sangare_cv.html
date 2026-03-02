@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/sangare_cv.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+   
 </head>
 
 <body>
+    <nav class="nav">
+            <button class="back">
+                <span class="btn_icon">←</span> <span class="btn_text"><a href="index.html">Retour</a></span>
+                </button>
+            <button class="download" id="downloadbtn">
+                <span class="btn_text2">
+                    Télécharger
+                </span>
+            </button>
+    </nav>
     <div class="container">
         <div class="profilContainer">
             <div class="photoContainer">
@@ -144,7 +157,7 @@
 
                 </div>
             </div>
-            <div class="sidebar-section-competence">
+            <div class="sidebar-section-competence last">
                 <div class="title">
                     <h3 class="sidebar-section-title">Langues</h3>
                 </div>
@@ -175,7 +188,7 @@
 
         <main class="main">
             <div class="contain">
-                <h1 class="titre">Experience professionnelle</h1>
+                <h1 class="titre barre">Experience professionnelle</h1>
                 <div class="ux-title">
                     <div class="lieu">
                         <h2>NG System</h2>
@@ -258,7 +271,7 @@
                     </div>
 
                 </div>
-                <h1 class="titre formation">Formations</h1>
+                <h1 class="titre barre formation">Formations</h1>
                 <div class="done">
                     <div class="logoContainer">
                         <img src="images/pt.png" alt="point" class="liste ">
@@ -282,6 +295,7 @@
                     </div>
 
                 </div>
+                
             </div>
         </main>
     </div>

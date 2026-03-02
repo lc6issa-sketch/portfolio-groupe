@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -10,13 +11,120 @@
     --uxTitleColor: #A4955B;
 }
 
+.nav{
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 1000px;
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none; 
+        color: antiquewhite;
+    }
+    /*button retour*/
+    .back{
+        background: transparent;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 12px 25px 12px 20px;
+        transition: all 0.3s ease;
+        gap: 10 px;
+       .btn_text{
+        font-size: 16px;
+        font-weight: 500;
+        color: antiquewhite;
+        position: relative;
+        z-index: 2;
+        transition: color 0.3s ease;
+       }
+       .btn_icon{
+        font-size: 24px;
+        color: antiquewhite;
+        position: relative;
+        z-index: 2;
+       }
+    }
+    .back::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: linear-gradient(90deg,#4D513A, #AEB784);
+        transition: left 0.4s ease;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    .back:hover::before{
+        left: 0;
+    }
+    .back:hover .btn_text,
+    .back:hover .btn_icon{
+        color: white;
+    }
+    .back:hover .btn_icon{
+            transform: translateX(-5px);
+    }
+    .back:active{
+        transform: scale(0.95);
+    }
+    /*button de telechargement*/
+    .download{
+         background: transparent;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        padding: 12px 25px 12px 20px;
+        transition: all 0.3s ease;
+        gap: 10 px;
+        margin-left: 780px;
+        .btn_text2{
+        font-size: 16px;
+        font-weight: 500;
+        color: antiquewhite;
+        position: relative;
+        z-index: 2;
+        transition: color 0.3s ease;
+       }
+    }
+    .download::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background: linear-gradient(90deg,#4D513A, #AEB784);
+        transition: left 0.4s ease;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    .download:hover::before{
+        left: 0;
+    }
+    .download:hover .btn_text2{
+        color: white;
+    }
+    .download:active{
+        transform: scale(0.95);
+    }
+}
+
 
 .container {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 32% 68%;
     width: 900px;
     margin: 40px auto;
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #ccc;
     position: relative;
 }
@@ -25,6 +133,7 @@
     width: 85%;
     top: 5%;
     left: 15%;
+  
     padding: 20px 20px 20px 100px;
     position: absolute;
     background-color: var(--Secondarycolor);
@@ -53,8 +162,8 @@
 
 .photoContainer {
     left: -60px;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     position: absolute;
 }
 
@@ -81,18 +190,42 @@
     color: var(--primaryColor);
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 8px;
+     position: relative;
+  display: inline-block;
+
 
 }
+.job::after{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 120%;
+  height: 4px;
+  background-color: var(--primaryColor);
+}
+.barre {
+  position: relative;
+  display: inline-block;
+}
 
+.barre::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-left: 23px;
+  bottom: -5px;
+  width: 100px;
+  height: 6px;
+  background-color: var(--primaryColor);
+}
 
 
 .sidebar-section {
     display: flex;
     flex-direction: column;
 
-    padding-top: 250px;
+    padding-top: 290px;
 }
 
 .sidebar-section-competence {
@@ -134,7 +267,7 @@
 }
 
 .contain {
-    padding-top: 260px;
+    padding-top: 290px;
 
     flex-direction: column;
 
@@ -186,11 +319,15 @@
 
 .info .task-title {
     font-size: 17px;
-    padding-top: 5px;
+    padding-top: 10px;
     color: black;
 }
 
 .formation {
     padding-top: 10px;
-
+   
 }
+.last {
+    padding-bottom: 150px;
+}
+
