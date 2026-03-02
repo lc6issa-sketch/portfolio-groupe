@@ -4,8 +4,37 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
-    background-color:white;
+    background-color:#e9edf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*CONTENEUR PRINCIPAL*/
+.cv-container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+   background: white;
+   display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.cv-container .left-side{
+    position: relative;
+    background: #41431B;
+    padding: 40px;
+}
+.cv-container .right-side{
+    position: relative;
+    background: #FFFFFF;
+    padding: 40px;
+};
     display: flex;
     justify-content: center;
     align-items: center;
