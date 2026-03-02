@@ -60,6 +60,9 @@
 
 .textContain {
     margin-left: 10%;
+    & p {
+        padding-top: 15px;
+    }
 
 }
 
