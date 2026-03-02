@@ -7,7 +7,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+    background: linear-gradient(#AEB784, #4D513A, #4D514A);
     padding:40px 20px;
 }
 
@@ -43,24 +43,24 @@ body{
 }
 
 .btn-download{
-    background: linear-gradient(90deg, #FFD700, #FFA500);
+    background: linear-gradient(90deg, #AEB784, #AEB784);
     box-shadow: 0 4px 15px rgba(255,215,0,0.3);
-    color: #4A00E0;
+    color: #fff;
 }
 
 .btn-download:hover{
     transform:scale(1.05);
-    background: linear-gradient(90deg, #FFA500, #FFD700);
+    background: linear-gradient(90deg, #AEB784, #4D513A);
 }
 
 /* === MESSAGE TELECHARGEMENT === */
 .message{
     text-align:center;
     margin-bottom:15px;
-    color: #FFD700;
+    color: #fff;
     font-weight:600;
     display:none;
-    background: #4A00E0;
+    background: #4D514A;
     padding: 10px;
     border-radius: 30px;
     max-width: 400px;
@@ -90,7 +90,7 @@ body{
 /* === LEFT SIDE === */
 .left{
     width:35%;
-    background: #F0F4FF;
+    background: #AEB784;
     padding:30px;
 }
 
@@ -101,7 +101,7 @@ body{
     object-fit:cover;
     display:block;
     margin:0 auto 20px auto;
-    border:5px solid #4A00E0;
+    border:5px solid #fff;
 }
 
 .section{
@@ -110,9 +110,9 @@ body{
 
 .section h3{
     margin-bottom:10px;
-    border-bottom: 2px solid #8E2DE2;
+    border-bottom: 2px solid #4D514A;
     padding-bottom:5px;
-    color: #4A00E0;
+    color: #fff;
     font-size: 1.2rem;
 }
 
@@ -132,7 +132,7 @@ body{
     content: "▹";
     position: absolute;
     left: 0;
-    color: #8E2DE2;
+    color: #4D514A;
     font-weight: bold;
 }
 
@@ -143,11 +143,11 @@ body{
 }
 
 .header{
-    background: linear-gradient(90deg, #4A00E0, #8E2DE2);
+    background: linear-gradient(90deg, #4D514A, #4D513A);
     color:white;
     padding:25px;
     margin:-40px -40px 30px -40px;
-    border-bottom: 4px solid #FFD700;
+    border-bottom: 4px solid #4D514A;
 }
 
 .header h1{
@@ -158,7 +158,7 @@ body{
 .header h2{
     font-weight:400;
     margin-top:5px;
-    color: #FFD700;
+    color: #ffff;
 }
 
 .right-section{
@@ -167,9 +167,9 @@ body{
 
 .right-section h3{
     margin-bottom:15px;
-    border-bottom: 2px solid #8E2DE2;
+    border-bottom: 2px solid #4D514A;
     padding-bottom:5px;
-    color: #4A00E0;
+    color: #4D514A;
     font-size: 1.3rem;
 }
 
@@ -179,14 +179,14 @@ body{
 
 .job h4{
     font-weight:600;
-    color: #4A00E0;
+    color: #4D514A;
 }
 
 .date{
     float:right;
     font-size:14px;
-    background: #FFD700;
-    color: #4A00E0;
+    background: #AEB784;
+    color: #fff;
     padding: 3px 10px;
     border-radius: 20px;
     font-weight: 600;
@@ -204,7 +204,7 @@ body{
 }
 
 .job ul li::marker{
-    color: #8E2DE2;
+    color: #4D514A;
 }
 
 .edu{
@@ -213,7 +213,7 @@ body{
 }
 
 .edu strong{
-    color: #4A00E0;
+    color: #4D514A;
 }
 
 /* === BADGES POUR SKILLS === */
@@ -222,7 +222,7 @@ body{
     padding: 5px 10px 5px 30px;
     border-radius: 20px;
     margin-bottom: 10px;
-    border-left: 3px solid #FFD700;
+    border-left: 3px solid #4D514A;
 }
 
 /* === LANGUAGES STYLE === */
@@ -236,18 +236,18 @@ body{
 
 .section:nth-of-type(3) ul li::before {
     content: "🌐";
-    color: #8E2DE2;
+    color: #4D514A;
     left: -5px;
 }
 
 /* === REFERENCE STYLE === */
 .section:last-of-type ul li {
     background: white;
-    border-left: 3px solid #4A00E0;
+    border-left: 3px solid #4D514A;
 }
 
 .section:last-of-type ul li strong {
-    color: #4A00E0;
+    color: #4D514A;
 }
 
 @media(max-width:900px){
