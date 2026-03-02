@@ -354,14 +354,23 @@ body{
         .centralh:first-of-type {
          margin-top: 0;
         }
+        .experience{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         .ch2 {
         font-size: 25px;
         font-weight: 600;
         color:black;
         margin: 25px 0 5px 0;
-        display: inline-block;
+        
       
         }
+        .period{
+            padding-top: 24px;
+        }
+        }
+      
          p {
         display: inline-block;
         margin-left: 120px;
