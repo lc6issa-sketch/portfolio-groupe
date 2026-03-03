@@ -19,7 +19,30 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
-
+.btn-télécharger{
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    z-index: 10;
+    background-color: #4b5333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-retour {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    z-index: 10;
+    background-color: #4b5333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .sidebar {
     width: 35%;
