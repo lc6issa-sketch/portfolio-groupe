@@ -3,8 +3,11 @@ function downloadPDF(){
     const moncv =document.getElementById("cv");
     html2pdf().from(moncv).save()
     window.print();
-    */
+    
    //document.getElementById("msg").style.display="block"
    alert("fichier telechargé avec succes")
    window.print()
+   */
+   const pdf=new jsPDF();
+   console.log(pdf)
 }
