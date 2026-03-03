@@ -6,7 +6,7 @@
 <title>moussa_cv</title>
 <link rel="stylesheet" href="./css/moussa_cv.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="./js/moussa_cv.js"></script>
 
@@ -15,10 +15,10 @@
 
 <div class="top-buttons">
     <a href="index.html" class="btn btn-retour" id="acc">← Acceuil</a>
-    <button class="btn btn-download" onclick="downloadPDF()" id="tele">Télécharger PDF</button>
+    <button class="btn btn-download" onclick="telechagerPDF()" id="tele">Télécharger PDF</button>
 </div>
 
-<div class="message" id="msg"> Le fichier est téléchargé avec succès !:</div>
+<div class="message" id="msg"></div>
 
 <div class="cv-container" id="cv">
 
