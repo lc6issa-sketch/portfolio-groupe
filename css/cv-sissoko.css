@@ -304,4 +304,259 @@ body {
     .name { font-size: 24px; }
     .title { font-size: 16px; }
     .section-title { font-size: 18px; }
+}* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 210mm;
+    min-height: 297mm;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.btn-télécharger{
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    z-index: 10;
+    background-color: #4b5333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-retour {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    z-index: 10;
+    background-color: #4b5333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    width: 35%;
+    background-color: #4b5333;
+    padding: 320px 25px 40px 35px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.titre {
+    color: #c4ca9f;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #c4ca9f;
+}
+
+.contact-item .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background-color: #c4ca9f;
+    color: #111;
+    border-radius: 50%;
+    margin-right: 12px;
+    font-size: 12px;
+}
+.contact-item .icon img{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 18px;
+    margin: 0;
+    font-size: 14px;
+    color: #a7ac87;
+    line-height: 1.5;
+}
+
+.list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.list li::before {
+    content: "•";
+    position: absolute;
+    left: -18px;
+    color: #000;
+    font-size: 20px;
+    top: -3px;
+}
+
+
+.entete {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #b3ba93;
+    padding: 25px 40px 25px 175px;
+    margin-top: 25px;
+    margin-left: -130px;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    margin: 0;
+    font-size: 32px;
+    color: #111;
+    font-weight: 800;
+}
+
+.title {
+    margin: 5px 0 15px 0;
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid #111;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.description {
+    font-size: 13px;
+    color: #111;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.contenu {
+    background-color: #ffffff;
+    padding: 25px 40px 40px 45px;
+    flex-grow: 1;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin: 0 0 25px 0;
+    font-size: 22px;
+    color: #4b5333;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #111;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.company {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.job-subtitle {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #a2915b;
+    text-transform: uppercase;
+}
+
+.job-tasks {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.6;
+}
+
+.job-tasks li {
+    margin-bottom: 8px;
+}
+
+.education-list {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.6;
+}
+
+.education-list li {
+    margin-bottom: 12px;
+}
+
+
+.profile {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    width: 225px;
+    height: 225px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10;
 }
