@@ -1,0 +1,39 @@
+*   [33mf5b6601[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mverification-merges[m[33m)[m Merge pull request #5 from lc6issa-sketch/cv-douyon
+[31m|[m[32m\[m  
+[31m|[m * [33m2061492[m[33m ([m[1;31morigin/cv-douyon[m[33m, [m[1;32mcv-douyon[m[33m)[m Mise à jour du CV Douyon
+[31m|[m * [33m6fefd21[m Mise à jour du CV Douyon (HTML, CSS, JS)
+[31m|[m * [33m591e759[m Ajout de fichiers css et js dans CV
+[31m|[m * [33m7bc8b70[m Ajout du contenu HTML du CV
+[31m|[m * [33m87dee57[m Ajout du fichier CV Douyon
+* [32m|[m [33m335d4ac[m Delete cv-ibrahima directory
+* [32m|[m   [33m1be98b5[m Merge pull request #4 from lc6issa-sketch/Sissoko
+[33m|[m[34m\[m [32m\[m  
+[33m|[m * [32m|[m [33m3753d98[m cv ibrahima
+[33m|[m * [32m|[m [33m4a0d3d7[m cv-sissoko
+* [34m|[m [32m|[m   [33mcb12299[m Merge pull request #3 from lc6issa-sketch/medmo-branch
+[34m|[m[36m\[m [34m\[m [32m\[m  
+[34m|[m [36m|[m[34m/[m [32m/[m  
+[34m|[m[34m/[m[36m|[m [32m|[m   
+[34m|[m * [32m|[m   [33m4ca52af[m[33m ([m[1;31morigin/medmo-branch[m[33m)[m Merge pull request #2 from lc6issa-sketch/main
+[34m|[m [32m|[m[34m\[m [32m\[m  
+[34m|[m [32m|[m[34m/[m [32m/[m  
+[34m|[m[34m/[m[32m|[m [32m/[m   
+[34m|[m [32m|[m[32m/[m    
+* [32m|[m [33ma005bad[m modification css
+* [32m|[m [33mb935bd0[m modification de html et css
+* [32m|[m   [33m9cf2219[m Merge branch 'accueil-css'
+[1;33m|[m[1;34m\[m [32m\[m  
+[1;33m|[m * [32m|[m [33m4fab06f[m[33m ([m[1;31morigin/accueil-css[m[33m)[m ajout des modifications css de la page d'accueil
+[1;33m|[m [32m|[m[32m/[m  
+* [32m|[m   [33m3c82598[m Merge branch 'accueil-html'
+[1;35m|[m[1;36m\[m [32m\[m  
+[1;35m|[m * [32m|[m [33m553659f[m modification dans html
+* [1;36m|[m [32m|[m [33m4f23f49[m Merge branch 'accueil-html' of https://github.com/lc6issa-sketch/portfolio-groupe
+[31m|[m[1;36m\[m[1;36m|[m [32m|[m 
+[31m|[m * [32m|[m [33mc47d662[m[33m ([m[1;31morigin/accueil-html[m[33m)[m création de la page d'accueil HTML
+[31m|[m [32m|[m[32m/[m  
+* [32m/[m [33m66185dc[m Ajout du cv de Maimouna
+[32m|[m[32m/[m  
+* [33m49d0f64[m Ajout du sous-dossier css et son fichier style css,js et son fichier js et sous-dossier images
+* [33m55a1326[m Create index.html
+* [33m54d12f4[m Initial commit
