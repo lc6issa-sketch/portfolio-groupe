@@ -159,6 +159,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #ccc;
     position: relative;
+    
 }
 
 .profilContainer {
@@ -171,7 +172,6 @@ body{
     background-color: var(--Secondarycolor);
     display: flex;
     gap: 20px;
-
 }
 
 .sidebar {
@@ -260,7 +260,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    margin-top: 290px;
+    margin-top: 320px;
 }
 
 .sidebar-section-competence {

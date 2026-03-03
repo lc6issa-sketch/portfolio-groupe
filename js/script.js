@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         elt.style.width = "200mm";
          const opt = {
             margin:       [5, 5, 5, 5],
-            filename:     'CV_Ismaila_Sangare.pdf',
+            filename:     'CV.pdf',
             image:        { type: 'jpeg', quality: 1 },
             html2canvas:  { scale: 2, scrollX: 0, scrollY: 0 },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
