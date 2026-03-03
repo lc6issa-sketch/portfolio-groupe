@@ -1,14 +1,24 @@
 * {
+    
     padding: 0;
     margin: 0;
+   
     box-sizing: border-box;
     
+}
+body{
+    background: linear-gradient(#AEB784, #4D513A, #4D514A );
 }
 
 :root {
     --primaryColor: #41431B;
     --Secondarycolor: #AEB784;
     --uxTitleColor: #A4955B;
+}
+
+.pdf-mode {
+    margin: 0 !important;
+    width: 200mm !important;
 }
 
 .nav {
@@ -18,15 +28,12 @@
     padding: 20px 5%;
 }
 
-/* Liens */
+
 .nav a {
     text-decoration: none;
     color: antiquewhite;
 }
 
-/* ========================= */
-/* BOUTON RETOUR */
-/* ========================= */
 
 .back {
     background: transparent;
@@ -38,7 +45,7 @@
     border-radius: 15px;
     padding: 12px 25px;
     transition: all 0.3s ease;
-    gap: 10px; /* ⚠️ corrigé (pas 10 px) */
+    gap: 10px; 
 }
 
 .back .btn_text {
@@ -88,9 +95,6 @@
     transform: scale(0.95);
 }
 
-/* ========================= */
-/* BOUTON TELECHARGER */
-/* ========================= */
 
 .download {
     background: transparent;
@@ -136,9 +140,6 @@
     transform: scale(0.95);
 }
 
-/* ========================= */
-/* RESPONSIVE NAV */
-/* ========================= */
 
 @media (max-width: 600px) {
     .nav {
@@ -153,6 +154,7 @@
     max-width: 900px;
     width: 95%;
     margin: 40px auto;
+    
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #ccc;
@@ -163,7 +165,7 @@
     width: 85%;
     top: 5%;
     left: 15%;
-  
+    
     padding: 20px 20px 20px 100px;
     position: absolute;
     background-color: var(--Secondarycolor);
@@ -188,7 +190,10 @@
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid white;
+    
 }
+
+
 
 .photoContainer {
     left: -60px;
@@ -255,7 +260,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 290px;
+    margin-top: 290px;
 }
 
 .sidebar-section-competence {
@@ -264,6 +269,8 @@
 
 .coordonnee {
     display: flex;
+    /* flex-wrap: wrap;
+    word-break: break-word; */
     padding-left: 40px;
     padding-top: 10px;
 }
@@ -286,10 +293,16 @@
 .sidebar-section-title,
 .info p {
     color: #AEB784;
+     
+    
 }
 
 .info {
+    
     padding-left: 10px;
+    & .mail {
+        word-break:  break-word;;
+    }
 }
 
 .info p {
@@ -359,7 +372,7 @@
 }
 .last {
     padding-bottom: 150px;
-}
+ }
 @media (max-width: 768px) {
 
     .container {

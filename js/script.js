@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("downloadbtn").addEventListener("click", function () {
        
         let elt = document.querySelector(".container");
+        const originalMargin = elt.style.margin;
+        const originalWidth = elt.style.width;
         elt.style.margin = "0";
         elt.style.width = "200mm";
          const opt = {
@@ -16,7 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
 
-       html2pdf().from(elt).save();
+       html2pdf().from(elt).save().then(() => {
+            elt.style.margin = originalMargin;
+            elt.style.width = originalWidth;
+        }); ;
 
     });
 
