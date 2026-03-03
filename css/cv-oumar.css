@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #AEB784, #4D513A, #4D514A );
+    color: white;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+    padding: 40px; /*  espace autour du CV */
+    justify-content: center; /*  centre horizontalement */
+}
+
+/* =========================
+   COLONNE GAUCHE
+========================= */
+.sidebar{
+    width:25%;
+    background:#41431B;
+    color:white;
+    padding:330px 40px 80px 40px;
+}
+
+.left-content h3{
+    margin-top:45px;
+    margin-bottom:18px;
+    font-size:15px;
+    letter-spacing:1.5px;
+}
+
+.left-content p{
+    margin-bottom:14px;
+    line-height:1.8;
+    font-size:14px;
+}
+
+.left-content ul{
+    margin-bottom:30px;
+    padding-left:18px;
+}
+
+.left-content li{
+    margin-bottom:10px;
+    line-height:1.8;
+    font-size:14px;
+}
+
+/* =========================
+   CONTENU DROIT
+========================= */
+.content{
+    width:75%;
+    position:relative;
+    background:white;
+    padding-bottom:50px;
+    color:black;
+}
+
+/* =========================
+   BOUTONS EN HAUT
+========================= */
+
+.top-buttons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 120px 0 120px;
+}
+
+.btn-action:first-child{
+    margin-left:40px;
+}
+
+/* boutons CV adaptés à style index.html */
+.btn-action {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4b4f1f;  /* couleur du bouton index */
+    color: white;
+    border: none;
+    border-radius: 40px;         /* arrondi */
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-action:hover {
+    background-color: #ffd700;   /* couleur au hover */
+    color: #4b4f1f;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeSlideDown{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.top-buttons{
+    animation:fadeSlideDown 0.8s ease forwards;
+}
+
+.download-btn{
+    background:#A4955B;
+}
+
+.download-btn:hover{
+    background:#41431B;
+}
+
+/* =========================
+   BANDEAU
+========================= */
+.top-header{
+    background:#AEB784;
+    position:relative;
+    width:110%;
+    margin-left:-10%;
+    margin-top:60px;
+    padding:80px 80px 80px 180px;
+    z-index:1;
+    animation:fadeSlideDown 1s ease forwards;
+}
+
+.top-header h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.top-header h2{
+    margin-bottom:20px;
+}
+
+.top-header p{
+    line-height:1.8;
+}
+
+/* =========================
+   PHOTO
+========================= */
+.photo-container{
+    position:absolute;
+    top:170px;
+    left:-12.5%;
+    transform:translateX(-50%);
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid white;
+    z-index:2;
+}
+
+.photo-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section-content{
+    padding:50px 90px;
+}
+
+.main-title{
+    margin-bottom:30px;
+    font-size:22px;
+}
+
+.experience{
+    margin-bottom:45px;
+    position:relative;
+}
+
+.date{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:14px;
+}
+
+.gold-text{
+    color:#A4955B;
+    margin-bottom:12px;
+}
+
+.experience ul{
+    margin-top:12px;
+    padding-left:22px;
+}
+
+.experience li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* TABLETTES et petits laptops */
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .top-buttons {
+        padding: 20px;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .top-header {
+        width: 100%;
+        margin: 0;
+        padding: 50px 30px 50px 30px;
+        text-align: center;
+    }
+
+    /* PHOTO — éviter le chevauchement */
+    .photo-container {
+        position: relative !important;
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin-top: 20px;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* SMARTPHONES */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .sidebar {
+        padding: 30px 15px;
+    }
+
+    .photo-container {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .top-header {
+        padding: 40px 20px;
+    }
+
+    .top-header h1 {
+        font-size: 26px;
+    }
+
+    .top-header h2 {
+        font-size: 18px;
+    }
+
+    .section-content {
+        padding: 25px 20px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+}
