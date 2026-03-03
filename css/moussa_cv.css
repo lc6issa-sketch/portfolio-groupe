@@ -259,3 +259,18 @@ body{
         margin:0;
     }
 }
+@media print {
+    @page{
+        margin: 0;
+
+    }
+    #msg {
+        display: none;
+    }
+    #tele {
+        display: none;
+    }
+    #acc {
+        display: none;
+    }
+}
