@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-   <title>Portfolio Groupe 2</title>
+   <title>Portfolio Team-DeV</title>
    <script src="js/script.js" defer></script>
     <!-- defer permet de charger et d’exécuter le JS après le HTML -->
 </head>
@@ -13,7 +13,7 @@
   <header class="header">
     <div class="logo">
       <img src="images/logo.png" alt="Logo Groupe 2">
-      <h1>Groupe 2</h1>
+      <h1>Team-DeV</h1>
     </div>
     <nav>
       <ul>
@@ -26,23 +26,37 @@
 
     <!-- section presentation -->
     <section id="presentation">
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Logo Groupe 2" class="hero-logo">
       <h2>Bienvenue sur notre Portfolio</h2>
       <p>
         Une équipe passionnée de 11 développeurs et designers créatifs,
         unis pour créer des expériences web exceptionnelles.
       </p>
       <a href="#equipe" class="btn">Découvrir l'équipe</a>
-    </section>
+    </div>
+
+    <div class="hero-shapes" aria-hidden="true">
+      <span class="shape shape-diamond"></span>
+      <span class="shape shape-triangle"></span>
+      <span class="shape shape-circle"></span>
+    </div>
+  </section>
 
     <!-- section equipe -->
-   <section id="equipe">
+  <section id="equipe">
   <h2>Notre Équipe</h2>
 
   <div class="conteneur-groupe">
     <!-- membre 1 -->
     <div class="card">
       <a href="cv-maimouna.html">
-        <img src="images/maimouna.jpg" alt="Maimouna Samaké">
+        <div class="card-media">
+        <img src="images/mai.jpg" alt="Maimouna Samaké">
+        <div class="card-overlay">
+          <span>Voir le CV</span>
+        </div>
+        </div>
       </a>
       <h3>Maimouna Samaké</h3>
       <p>Développeuse Full Stack</p>
@@ -50,8 +64,13 @@
 
     <!-- membre 2 -->
     <div class="card">
-      <a href="cv-issaka.html">
-        <img src="images/issaka.jpg" alt="Issaka Douyon">
+      <a href="cv-douyon.html">
+        <div class="card-media">
+        <img src="images/Douyon.jpg" alt="Issaka Douyon">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+        </div>
       </a>
       <h3>Issaka Douyon</h3>
       <p>Développeur Full Stack</p>
@@ -60,7 +79,12 @@
     <!-- membre 3 -->
     <div class="card">
       <a href="cv-dialla.html">
-        <img src="images/dialla.jpg" alt="Dialla Coulibaly">
+        <div class="card-media">
+          <img src="images/dialla.jpg" alt="Dialla Coulibaly">
+          <div class="card-overlay">
+            <span>Voir le CV</span>
+          </div>
+        </div>
       </a>
       <h3>Dialla Coulibaly</h3>
       <p>Développeuse Full Stack</p>
@@ -68,7 +92,12 @@
     <!-- membre 4 -->
     <div class="card">
       <a href="cv-moussa.html">
-        <img src="images/moussa.jpg" alt="Moussa Traoré">
+        <div class="card-media">
+        <img src="images/moussa.jpeg" alt="Moussa Traoré">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+      </div>
       </a>
       <h3>Moussa Traoré</h3>
       <p>Développeur Full Stack</p>
@@ -76,7 +105,12 @@
     <!-- membre 5 -->
     <div class="card">
       <a href="cv-oumar.html">
-        <img src="images/oumar.jpg" alt="Oumar Kanadji">
+        <div class="card-media">
+        <img src="images/oumar.png" alt="Oumar Kanadji">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+        </div>
       </a>
       <h3>Oumar KANADJI</h3>
       <p>Développeur Full Stack</p>
@@ -84,7 +118,12 @@
     <!-- membre 6 -->
     <div class="card">
       <a href="cv-safiatou.html">
-        <img src="images/safiatou.jpg" alt="Safiatou Samaké">
+        <div class="card-media">
+        <img src="images/safi.jpg" alt="Safiatou Samaké">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+        </div>
       </a>
       <h3>Safiatou Broulaye SAMAKE</h3>
       <p>Développeur Full Stack</p>
@@ -92,7 +131,12 @@
     <!-- membre 7 -->
     <div class="card">
       <a href="cv-idrissa.html">
-        <img src="images/idrissa.jpg" alt="Idrissa Gassama">
+        <div class="card-media">
+        <img src="images/idriss.jpeg" alt="Idrissa Gassama">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+      </div>
       </a>
       <h3>Idrissa GASSAMA</h3>
       <p>Développeur Full Stack</p>
@@ -100,31 +144,51 @@
     <!-- membre 8 -->
     <div class="card">
       <a href="cv-ibrahima.html">
-        <img src="images/ibrahima.jpg" alt="Ibrahima Sissoko">
+        <div class="card-media">
+        <img src="images/ibra.jpg" alt="Ibrahima Sissoko">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+        </div>
       </a>
       <h3>Ibrahima SISSOKO</h3>
       <p>Développeur Full Stack</p>
     </div>
-    <!-- membre 8 -->
+    <!-- membre 9 -->
     <div class="card">
       <a href="cv-ismaïla.html">
-        <img src="images/ismaïla.jpg" alt="Ismaïla Sangaré">
+        <div class="card-media">
+        <img src="images/ismo.png" alt="Ismaïla Sangaré">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+        </div>
       </a>
       <h3>Ismaïla SANGARE</h3>
       <p>Développeur Full Stack</p>
     </div>
-    <!-- membre 9 -->
+    <!-- membre 10 -->
     <div class="card">
       <a href="cv-fanene.html">
-        <img src="images/fanene.jpg" alt="Fanene Diarra">
+        <div class="card-media">
+        <img src="images/diarra.jpeg" alt="Fanene Diarra">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+      </div>
       </a>
       <h3>Fanene Ibrahim DIARRA</h3>
       <p>Développeur Full Stack</p>
     </div>
-    <!-- membre 10 -->
+    <!-- membre 11 -->
     <div class="card">
       <a href="cv-mahamadou.html">
+        <div class="card-media">
         <img src="images/mahamadou.jpg" alt="Mahamadou Alhabibou">
+        <div class="card-overlay">
+        <span>Voir le CV</span>
+      </div>
+      </div>
       </a>
       <h3>Mahamadou ALHABIBOU</h3>
       <p>Développeur Full Stack</p>
