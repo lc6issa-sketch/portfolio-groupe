@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   COLONNE GAUCHE
+========================= */
+.sidebar{
+    width:25%;
+    background:#41431B;
+    color:white;
+    padding:330px 40px 80px 40px;
+}
+
+.left-content h3{
+    margin-top:45px;
+    margin-bottom:18px;
+    font-size:15px;
+    letter-spacing:1.5px;
+}
+
+.left-content p{
+    margin-bottom:14px;
+    line-height:1.8;
+    font-size:14px;
+}
+
+.left-content ul{
+    margin-bottom:30px;
+    padding-left:18px;
+}
+
+.left-content li{
+    margin-bottom:10px;
+    line-height:1.8;
+    font-size:14px;
+}
+
+/* =========================
+   CONTENU DROIT
+========================= */
+.content{
+    width:75%;
+    position:relative;
+    background:white;
+    padding-bottom:50px;
+}
+
+/* =========================
+   BOUTONS EN HAUT
+========================= */
+
+.top-buttons{
+    display:flex;
+    justify-content:space-between; /* sépare les deux */
+    align-items:center;
+    padding:30px 120px 0 120px; /* plus d'espace à gauche */
+}
+
+/* Bouton Retour (plus vers la droite) */
+.btn-action:first-child{
+    margin-left:40px; /* décalage vers la droite */
+}
+
+/* Style général */
+.btn-action{
+    padding:12px 25px;
+    background:#41431B;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Animation au hover */
+.btn-action:hover{
+    background:#A4955B;
+    transform:translateY(-4px); /* petit effet lift */
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animation d’apparition */
+@keyframes fadeSlideDown{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.top-buttons{
+    animation:fadeSlideDown 0.8s ease forwards;
+}
+
+/* Bouton téléchargement couleur différente */
+.download-btn{
+    background:#A4955B;
+}
+
+.download-btn:hover{
+    background:#41431B;
+}
+
+/* =========================
+   BANDEAU
+========================= */
+.top-header{
+    background:#AEB784;
+    position:relative;
+    width:110%;
+    margin-left:-10%;
+    margin-top:60px;
+    padding:80px 80px 80px 180px;
+    z-index:1;
+     animation:fadeSlideDown 1s ease forwards;
+}
+
+.top-header h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.top-header h2{
+    margin-bottom:20px;
+}
+
+.top-header p{
+    line-height:1.8;
+}
+
+/* =========================
+   PHOTO
+========================= */
+.photo-container{
+    position:absolute;
+    top:170px;
+    left:-12.5%;
+    transform:translateX(-50%);
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid white;
+    z-index:2;
+}
+
+.photo-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section-content{
+    padding:50px 90px;
+}
+
+.main-title{
+    margin-bottom:30px;
+    font-size:22px;
+}
+
+.experience{
+    margin-bottom:45px;
+    position:relative;
+}
+
+.date{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:14px;
+}
+
+.gold-text{
+    color:#A4955B;
+    margin-bottom:12px;
+}
+
+.experience ul{
+    margin-top:12px;
+    padding-left:22px;
+}
+
+.experience li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
