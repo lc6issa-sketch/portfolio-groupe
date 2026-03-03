@@ -1,0 +1,430 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+   
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(#AEB784, #4D513A, #4D514A );
+}
+
+:root {
+    --primaryColor: #41431B;
+    --Secondarycolor: #AEB784;
+    --uxTitleColor: #A4955B;
+}
+
+.pdf-mode {
+    margin: 0 !important;
+    width: 200mm !important;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+.back {
+    background: transparent;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+    gap: 10px; 
+}
+
+.back .btn_text {
+    font-size: 16px;
+    font-weight: 500;
+    color: antiquewhite;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.back .btn_icon {
+    font-size: 24px;
+    color: antiquewhite;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.back::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 80%;
+    top: 0;
+    background: linear-gradient(90deg,#4D513A, #AEB784);
+    transition: left 0.4s ease;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.back:hover::before {
+    left: 0;
+}
+
+.back:hover .btn_text,
+.back:hover .btn_icon {
+    color: white;
+}
+
+.back:hover .btn_icon {
+    transform: translateX(-5px);
+}
+
+.back:active {
+    transform: scale(0.95);
+}
+
+
+.download {
+    background: transparent;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+}
+
+.download .btn_text2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: antiquewhite;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.download::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    background: linear-gradient(90deg,#4D513A, #AEB784);
+    transition: left 0.4s ease;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.download:hover::before {
+    left: 0;
+}
+
+.download:hover .btn_text2 {
+    color: white;
+}
+
+.download:active {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    max-width: 900px;
+    width: 95%;
+    margin: 40px auto;
+    
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.profilContainer {
+    width: 85%;
+    top: 5%;
+    left: 15%;
+    
+    padding: 20px 20px 20px 100px;
+    position: absolute;
+    background-color: var(--Secondarycolor);
+    display: flex;
+    gap: 20px;
+
+}
+
+.sidebar {
+    background-color: var(--primaryColor);
+
+}
+
+.main {
+
+    background-color: white;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    
+}
+
+
+
+.photoContainer {
+    left: -60px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.textContain {
+    margin-left: 10%;
+    & p {
+        padding-top: 15px;
+    }
+
+}
+
+.nom {
+    padding-bottom: 10px;
+    color: var(--primaryColor);
+    font-weight: 90;
+
+    & span {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.job {
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    font-weight: bold;
+     position: relative;
+  display: inline-block;
+
+
+}
+.job::after{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 120%;
+  height: 4px;
+  background-color: var(--primaryColor);
+}
+.barre {
+  position: relative;
+  display: inline-block;
+}
+
+.barre::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-left: 23px;
+  bottom: -5px;
+  width: 100px;
+  height: 6px;
+  background-color: var(--primaryColor);
+}
+
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 290px;
+}
+
+.sidebar-section-competence {
+    padding-top: 15px;
+}
+
+.coordonnee {
+    display: flex;
+    /* flex-wrap: wrap;
+    word-break: break-word; */
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+}
+
+.sidebar-section-title {
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.sidebar-section-title,
+.info p {
+    color: #AEB784;
+     
+    
+}
+
+.info {
+    
+    padding-left: 10px;
+    & .mail {
+        word-break:  break-word;;
+    }
+}
+
+.info p {
+    font-size: 14px;
+}
+
+.contain {
+    padding-top: 290px;
+
+    flex-direction: column;
+
+    & .titre {
+        text-transform: uppercase;
+        color: var(--primaryColor);
+        padding-left: 20px;
+    }
+
+    & .ux-title {
+        padding-top: 15px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    & .lieu {
+        padding-left: 50px;
+    }
+
+    & .date {
+        padding-right: 50px;
+        padding-top: 10px;
+
+        & h5 {
+            color: #4B4B4B;
+        }
+    }
+
+    & .task {
+        color: var(--uxTitleColor);
+        font-size: 23px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.done {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.liste {
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.info .task-title {
+    font-size: 17px;
+    padding-top: 10px;
+    color: black;
+}
+
+.formation {
+    padding-top: 10px;
+   
+}
+.last {
+    padding-bottom: 150px;
+ }
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .main {
+        order: 3;
+    }
+
+    .profilContainer {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photoContainer {
+        position: relative;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    .textContain {
+        margin-left: 0;
+    }
+
+    .contain {
+        padding-top: 20px;
+    }
+
+    .sidebar-section {
+        padding-top: 20px;
+    }
+
+    .done {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contain .task {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+}
