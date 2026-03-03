@@ -5,9 +5,18 @@
     font-family: Arial, sans-serif;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #AEB784, #4D513A, #4D514A );
+    color: white;
+}
+
 .container{
     display:flex;
     min-height:100vh;
+    padding: 40px; /*  espace autour du CV */
+    justify-content: center; /*  centre horizontalement */
 }
 
 /* =========================
@@ -52,6 +61,7 @@
     position:relative;
     background:white;
     padding-bottom:50px;
+    color:black;
 }
 
 /* =========================
@@ -60,36 +70,39 @@
 
 .top-buttons{
     display:flex;
-    justify-content:space-between; /* sépare les deux */
+    justify-content:space-between;
     align-items:center;
-    padding:30px 120px 0 120px; /* plus d'espace à gauche */
+    padding:30px 120px 0 120px;
 }
 
-/* Bouton Retour (plus vers la droite) */
 .btn-action:first-child{
-    margin-left:40px; /* décalage vers la droite */
+    margin-left:40px;
 }
 
-/* Style général */
-.btn-action{
-    padding:12px 25px;
-    background:#41431B;
-    color:white;
-    border:none;
-    cursor:pointer;
-    transition:all 0.3s ease;
-    position:relative;
-    overflow:hidden;
+/* boutons CV adaptés à style index.html */
+.btn-action {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4b4f1f;  /* couleur du bouton index */
+    color: white;
+    border: none;
+    border-radius: 40px;         /* arrondi */
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Animation au hover */
-.btn-action:hover{
-    background:#A4955B;
-    transform:translateY(-4px); /* petit effet lift */
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+.btn-action:hover {
+    background-color: #ffd700;   /* couleur au hover */
+    color: #4b4f1f;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Animation d’apparition */
 @keyframes fadeSlideDown{
     from{
         opacity:0;
@@ -105,7 +118,6 @@
     animation:fadeSlideDown 0.8s ease forwards;
 }
 
-/* Bouton téléchargement couleur différente */
 .download-btn{
     background:#A4955B;
 }
@@ -125,7 +137,7 @@
     margin-top:60px;
     padding:80px 80px 80px 180px;
     z-index:1;
-     animation:fadeSlideDown 1s ease forwards;
+    animation:fadeSlideDown 1s ease forwards;
 }
 
 .top-header h1{
@@ -200,4 +212,90 @@
 .experience li{
     margin-bottom:10px;
     line-height:1.7;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* TABLETTES et petits laptops */
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .top-buttons {
+        padding: 20px;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .top-header {
+        width: 100%;
+        margin: 0;
+        padding: 50px 30px 50px 30px;
+        text-align: center;
+    }
+
+    /* PHOTO — éviter le chevauchement */
+    .photo-container {
+        position: relative !important;
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin-top: 20px;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* SMARTPHONES */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .sidebar {
+        padding: 30px 15px;
+    }
+
+    .photo-container {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+
+    .top-header {
+        padding: 40px 20px;
+    }
+
+    .top-header h1 {
+        font-size: 26px;
+    }
+
+    .top-header h2 {
+        font-size: 18px;
+    }
+
+    .section-content {
+        padding: 25px 20px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
 }
