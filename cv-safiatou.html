@@ -3,32 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
          <link rel="stylesheet" href="css/cv-safiatou.css">
+         <script src="./js/cv-safiatou.js"></script>
         <title>CV Safiatou</title>
     </head>
     <body>
+            <!--Bouton-->
+        <div class="cv-action">
+            <button class="btn-left" onclick="goHome()">Retour</button>
+            <button class="btn-right" onclick="Download()">Télécharger</button>
+        </div><!--Message confirmation-->
+        <p id="Downlaod-message">Votre CV à été télécharger avec succès!</p>
         <div class="cv-container">
             <!--Colonne Gauche-->
             <div class="left-side">
                 <div class="photo">
-                        <img src="images/monimage.jpg" alt="Photo de Safiatou">
+                        <img src="images/20260302_180533.jpg" alt="Photo de Safiatou">
                     </div>
-                    <section class="COORDONNEES">
+                    <section class="contact">
                         <h3>COORDONNEES</h3>
-                        <p>+223 94921140</p>
-                        <p>safiatousamake030@gmail.com</p>
-                        <p>Kabala-EST</p>
+                        <p></i><i class="fa-solid fa-phone"></i>+223 94921140</p>
+                        <p><i class="fa-solid fa-envelope"></i>safiatousamake030@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Kabala-EST</p>
                     </section>
                     <section class="COMPETENCES">
                         <h3>COMPETENCES</h3>
                         <ul>
-                            <li>ERP:ODOO</li>
+                            <li>ERP:ODOO,Dolibar</li>
                             <li>Developpement web: HTML,CSS</li>
                             <li>Conception: Merise, UML</li>
                         </ul>
                     </section>
                     <section class="QUALITE">
-                        <h3>QUALITE</h3>
+                        <h3>QUALITES</h3>
                         <ul>
                             <li>Courageuse</li>
                             <li>Adaptable</li>
@@ -36,14 +47,14 @@
                         </ul>
                     </section>
                     <section class="LANGUE">
-                        <h3>LANGUE</h3>
+                        <h3>LANGUES</h3>
                         <ul>
                             <li>Français (courante)</li>
                             <li>Anglais (débutante)</li>
                         </ul>
                     </section>
                     <section class="centre-interet">
-                        <h3>CENTRE D'INTERET</h3>
+                        <h3>CENTRE D'INTERETS</h3>
                         <ul>
                             <li>Film</li>
                             <li>Lecture</li>
