@@ -7,12 +7,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="css/cv_dialla.css" />
     <title>CV Dialla</title>
     <script src="js/cv_dialla.js" defer></script>
+    
   </head>
   <body>
+        <button  id="downloadbtn">
+        Télécharger
+    </button>
+
+<div id="cv" class="container_parent">
     <header class="profil">
       <h1 class="firstname">Dialla</h1>
       <h1>COULIBALY</h1>
@@ -20,8 +26,11 @@
     </header>
     <main class="container">
       <aside class="container_left">
+        <div>
+          
+        </div>
         <img
-          src="images/IMG_20240417_111423~2.jpg"
+          src="images/photodialla.jpg"
           class="ronder_cercle_image"
           alt="Photo de profil"
         />
@@ -123,5 +132,7 @@
         </section>
       </section>
     </main>
+</div>
   </body>
+  
 </html>
