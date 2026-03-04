@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 body {
   display: flex;
@@ -41,6 +41,7 @@ body {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   display: flex;
   gap: 20px;
@@ -56,28 +57,30 @@ body {
   padding: 10px;
   margin-top: -160px;
   margin-left: 25px;
+  flex: 1 !important;
 }
 .container_right {
   padding: 5px;
+  flex: 2 !important;
 }
 
 #education {
-  padding-top: 25px;
+  padding-top: 35px;
 }
 #education hr {
-  width: 300px;
+  width: 65%;
   margin-top: -7px;
   margin-left: 80px;
 }
 #education p {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 #Competences_cles {
   padding-top: 20px;
 }
 #Competences_cles hr {
-  width: 220px;
+  width: 40%;
   margin-top: -7px;
   margin-left: 160px;
 }
@@ -85,18 +88,19 @@ body {
   padding-top: 20px;
 }
 #langues hr {
-  width: 320px;
+  width: 65%;
   margin-top: -7px;
-  margin-left: 75px;
+  margin-left: 85px;
 }
 #contact {
   padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 #contact hr {
-  width: 320px;
+  width: 65%;
   margin-top: -7px;
-  margin-left: 75px;
+  margin-left: 85px;
 }
 #contact i {
   padding: 5px;
@@ -109,12 +113,18 @@ ul li {
   margin-left: 35px;
   padding-top: 10px;
 }
+ul {
+  margin-top: 10px;
+}
 #experience h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+#experience h3 {
+  margin-top: 15px;
+}
 #experience hr {
-  width: 300px;
+  width: 70%;
   margin-top: -15px;
   margin-left: 90px;
   color: rgb(4, 0, 0);
@@ -125,7 +135,7 @@ ul li {
   margin-bottom: 10px;
 }
 #profil_info hr {
-  width: 320px;
+  width: 70%;
   margin-top: -15px;
   margin-left: 90px;
 }
@@ -166,17 +176,10 @@ div {
   .container_right {
     width: 100%;
     margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
-  .container_left {
-    border-radius: 0;
-  }
-  #Competences_cles hr {
-    width: 50% !important;
-  }
-  hr {
-    width: 70% !important;
-  }
   .profil {
     text-align: start;
   }
