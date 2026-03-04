@@ -3,35 +3,34 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 body {
   display: flex;
 
   flex-direction: column;
- 
-  align-items: center;
- background:linear-gradient(#AEB784,#4D513A,#4D514A);
- padding: 20px;
 
- 
-  
+  align-items: center;
+  background: linear-gradient(#aeb784, #4d513a, #4d514a);
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .profil {
   background-color: #aeb784;
-   width: 100%;
-  max-width: 900px;   
+  width: 100%;
+  max-width: 900px;
   padding: 20px;
   text-align: end;
 }
-  .profil p{
-    font-size: 15px;
-    margin-right: 70px;
-  }
- .profil h1{
-    margin-right: 70px;
-    font-size: 45px;
-  }
+.profil p {
+  font-size: 15px;
+  margin-right: 70px;
+}
+.profil h1 {
+  margin-right: 70px;
+  font-size: 45px;
+}
 
 .ronder_cercle_image {
   width: 180px;
@@ -42,111 +41,108 @@ body {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   display: flex;
   gap: 20px;
   width: 100%;
-  max-width: 900px;   
+  max-width: 900px;
   background-color: white;
-
-flex-wrap: wrap;
-
-
-  }
-    .container_left {
- 
-    background-color: #41431b;
-    color: white;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
-    padding: 10px;
-    margin-top: -160px;
-    margin-left: 25px;
-      flex:1;}
-  .container_right {
-    flex: 2;
-  
-    padding: 5px;
-  }
+}
+.container_left {
+  background-color: #41431b;
+  color: white;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  padding: 10px;
+  margin-top: -160px;
+  margin-left: 25px;
+  flex: 1 !important;
+}
+.container_right {
+  padding: 5px;
+  flex: 2 !important;
+}
 
 #education {
-  padding-top: 25px;
- 
+  padding-top: 35px;
 }
-#education hr{
-    width: 300px;
-    margin-top: -7px;
-    margin-left: 80px;
-  }
-#education p{
-    margin-top: 10px;
-    margin-left: 20px;
-  
-  }
+#education hr {
+  width: 65%;
+  margin-top: -7px;
+  margin-left: 80px;
+}
+#education p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
 #Competences_cles {
   padding-top: 20px;
-  hr {
-    width: 230px;
-    margin-top: -7px;
-    margin-left: 160px;
-  }
+}
+#Competences_cles hr {
+  width: 40%;
+  margin-top: -7px;
+  margin-left: 160px;
 }
 #langues {
   padding-top: 20px;
-  
 }
 #langues hr {
-    width: 320px;
-    margin-top: -7px;
-    margin-left: 75px;
-  }
+  width: 65%;
+  margin-top: -7px;
+  margin-left: 85px;
+}
 #contact {
   padding-top: 20px;
- 
+  margin-bottom: 5px;
 }
 
-#contact hr{
-    width: 320px;
-    margin-top: -7px;
-    margin-left: 75px;
-  }
-  #contact i{
-    padding: 5px;
-  }
-#contact p{
-  
-    margin-left: 15px;
+#contact hr {
+  width: 65%;
+  margin-top: -7px;
+  margin-left: 85px;
+}
+#contact i {
+  padding: 5px;
+}
+#contact p {
+  margin-left: 15px;
   padding-top: 10px;
-  }
+}
 ul li {
   margin-left: 35px;
   padding-top: 10px;
 }
-#experience h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-   #experience   hr {
-    width: 300px;
-    margin-top: -15px;
-    margin-left: 90px;
-    color: rgb(4, 0, 0);
-  }
+ul {
+  margin-top: 10px;
+}
+#experience h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#experience h3 {
+  margin-top: 15px;
+}
+#experience hr {
+  width: 75%;
+  margin-top: -15px;
+  margin-left: 95px;
+  color: rgb(4, 0, 0);
+}
 
-#profil_info  h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-   
-  }
+#profil_info h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #profil_info hr {
-    width: 320px;
-    margin-top: -15px;
-    margin-left: 90px;
-  } 
+  width: 75%;
+  margin-top: -15px;
+  margin-left: 95px;
+}
 #profil_info p {
-    padding-top: 20px;
-    margin-right: 12px;
-  }
+  padding-top: 20px;
+  margin-right: 12px;
+}
 
 .timeline_vertical {
   border-left: 2px solid black;
@@ -173,16 +169,18 @@ div {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-   
+    gap: 0;
   }
 
- 
+  .container_left,
+  .container_right {
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
   .profil {
-    text-align: end;
-   
-  
+    text-align: start;
   }
-
- 
-  
 }
