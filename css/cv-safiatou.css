@@ -62,10 +62,11 @@ body {
 .photo {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     margin-bottom: 30px;
     z-index: 2;
-    align-self: flex-end;
+    align-self:flex-end;
+
 }
 .photo img {
     width: 150px;
@@ -73,6 +74,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #AEB784;
+    transform:translate(20%,15%);
 }
 
 /* Colonne droite */
@@ -86,8 +88,8 @@ body {
 /* Profil en haut */
 .profil {
     background-color: #AEB784;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 6px;
     margin-bottom: 40px;
     margin-left: -100px ;
     margin-right: -40px;
@@ -97,31 +99,55 @@ body {
     font-size: 28px;
     color: #000;
     margin-bottom: 5px;
-    text-align: center;
+    text-align:center;
+    margin-left:-310px;
 }
 .profil h2 {
     font-size: 18px;
     color: #000;
     margin-bottom: 15px;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 90px;
+    position: relative;
+}
+.profil h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 20%;
+    height: 3px;
+    background: linear-gradient(#000);
+    border-radius: 10px;
 }
 .profil p {
     font-size: 14px;
     line-height: 1.6;
-    margin-left: 50px;
+    margin-left: 90px;
 }
-
-
 /* Expériences */
 .right-side h3 {
     font-size: 18px;
     margin-bottom: 15px;
     color: #41431B;
-    border-bottom: 1px solid #41431B  ;
+   /* border-bottom: 1px solid #41431B  ;
     padding-bottom: 5px;
     display: inline-block;
-    border-radius: 5px ;
+    border-radius: 5px ;*/
+    position: relative;
+    line-height: 1.7;
+    margin-left: 20px;
+}
+
+.right-side h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 10%;
+    height: 3px;
+    background: linear-gradient(#41431B);
+    border-radius: 10px;
 }
 
 .job {
@@ -131,6 +157,7 @@ body {
 .job h4 {
     font-size: 15px;
     color: #AEB784;
+    line-height: 1.8;
 }
 
 .job span {
@@ -139,12 +166,12 @@ body {
 }
 
 .job ul {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .job li {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.9;
 }
 .job-header {
     display: flex;
@@ -157,17 +184,24 @@ body {
     font-size: 15px;
     color: #AEB784;
     margin: 0;
+    margin-left: 20px;
 }
 
 .job-header span {
     font-size: 14px;
     color: #000000;
+    margin-left: 30px;
 }
 .contact i {
     margin-right: 10px;  
     color: #AEB784;
     font-size: 18px;
     align-items: center;
+    min-width: 20px;
+}
+.contact p {
+    display: flex;          /* met les éléments sur la même ligne */
+    align-items: center;    /* centre verticalement */
 }
 .cv-action{
     display: flex;
@@ -183,10 +217,14 @@ body {
     background-color: #AEB784;
     color: #000;
 }
+.btn-left a{
+    text-decoration: none;
+    color: #000;
+}
 .btn-left,.btn-right{
     padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
+    border: 2px solid #AEB784;
+    border-radius: 12px ;
     font-size: 14px;
     cursor: pointer;
 }
@@ -209,12 +247,39 @@ body {
     margin-right: auto;
     border: 1px solid rgba(255, 255,255, 0);
 }
-@media (max-width: 768px){
-.cv-container{
-    flex-direction: column;
-}
-body{
-    align-items: flex-start;
-    padding: 20px 0;
-}
+
+@media screen and (max-width: 768px) {
+
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .profil {
+        margin: 0;
+    }
+
+    .profil h2,
+    .profil p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cv-action {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-left,
+    .btn-right {
+        width: 100%;
+    }
 }
