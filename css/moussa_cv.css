@@ -149,6 +149,7 @@ body{
 
 .right-section{
     margin-bottom:30px;
+    margin-top: 20px;
 }
 
 .right-section h3{
@@ -171,11 +172,10 @@ body{
 .date{
     float:right;
     font-size:14px;
-    background: #AEB784;
-    color: #fff;
+    color: #4D514A;
     padding: 3px 10px;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight:    600;
 }
 
 .job ul{
@@ -219,14 +219,60 @@ body{
         margin:0;
     }
 }
+
 /* ligne verticale */
-.timeline {
+.fleggg{
+    display: flex;
+    width: 70px;
+    height: 20px;
+    .h3p{
+        margin-left: 30px;
+        margin-bottom: 15px;
+       
+        
+    }
+    .h3p2 {
+    padding-top: -30px;
+    position: relative;
+    padding-left: 30px;
+    
+}
+    .h3p2::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 600px;
+        margin-left: 28px;
+        height: 3px;
+        bottom: -5px;
+        margin-bottom: 10px;
+        background-color: #555;
+        margin-top: 10px;
+
+    }
+    .profile{
+        padding-top: 30px;
+        padding-right: 5px;
+        width: 30px;
+        
+    }
+   
+}
+.ligneVerticale {
     padding-top: 0;
     position: relative;
     padding-left: 30px;
 }
+.idv{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10px;
+}
 
-.timeline::before {
+.ligneVerticale::before {
     content: '';
     position: absolute;
     top: 0;
@@ -234,8 +280,76 @@ body{
     width: 3px;
     height: 100%;
     background-color: #555;
+    z-index: 0;
 }
 
+
+.pointPourEdu {
+    position: absolute;
+    left: 3px;
+    top: 40px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourEdu1 {
+    position: absolute;
+    left: 3px;
+    top: 93px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp {
+    position: absolute;
+    left: 3px;
+    top: 42px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp1 {
+    position: absolute;
+    left: 3px;
+    top: 183px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp2 {
+    position: absolute;
+    left: 3px;
+    top: 304px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourProf {
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+/*style pour le profil image*/
+.profile {
+    position: absolute;
+    top: 239px;
+    z-index: 100;
+}
 @media print {
     @page{
         margin: 0;
