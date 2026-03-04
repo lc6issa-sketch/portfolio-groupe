@@ -11,25 +11,32 @@ body {
     justify-content: center;
 }
 
-.container {
+.containers {
     width: 210mm;
     min-height: 297mm;
     background-color: #fff;
     display: flex;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    margin: 40px;
 }
 .btn-télécharger{
     position: absolute;
     top: -40px;
     right: 10px;
     z-index: 10;
-    background-color: #4b5333;
+    background-color: #AEB784;
     color: #fff;
     border: none;
     padding: 10px 20px;
+    margin-top: -20px;
     border-radius: 5px;
     cursor: pointer;
+}
+.btn-télécharger:hover{
+    background-color: #8d9c5d;
+    transform: scale(1.2);
+    transition: all ease-in 0.2s;
 }
 .btn-retour {
     position: absolute;
@@ -40,8 +47,14 @@ body {
     color: #fff;
     border: none;
     padding: 10px 20px;
+    margin-top: -20px;
     border-radius: 5px;
     cursor: pointer;
+}
+.btn-retour:hover{
+    background-color: #8d9c5d;
+    transform: scale(1.2);
+    transition: all ease-in 0.2s;
 }
 .btn-retour a{
     color: #fff;
@@ -49,7 +62,7 @@ body {
 }
 
 .sidebar {
-    width: 35%;
+    width: 40%;
     background-color: #4b5333;
     padding: 320px 25px 40px 35px;
 }
@@ -66,7 +79,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.contact-item {
+.contact {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -74,7 +87,7 @@ body {
     color: #c4ca9f;
 }
 
-.contact-item .icon {
+.contact .icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -86,17 +99,19 @@ body {
     margin-right: 12px;
     font-size: 12px;
 }
-.contact-item .icon img{
+.contact .icon img{
     width: 26px;
     height: 26px;
     border-radius: 50%;
 }
-
+.contact span{
+    font-size: 15px;
+}
 .list {
     list-style-type: none;
-    padding-left: 18px;
+    padding-left: 20px;
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
     color: #a7ac87;
     line-height: 1.5;
 }
@@ -104,6 +119,7 @@ body {
 .list li {
     margin-bottom: 10px;
     position: relative;
+    font-size: 15px;
 }
 
 .list li::before {
@@ -171,7 +187,7 @@ body {
     margin-bottom: 40px;
 }
 
-.section-title {
+.section-titre {
     margin: 0 0 25px 0;
     font-size: 22px;
     color: #4b5333;
@@ -181,7 +197,7 @@ body {
     font-weight: bold;
 }
 
-.section-title::after {
+.section-titre::after {
     content: "";
     position: absolute;
     left: 0;
@@ -202,9 +218,9 @@ body {
     margin-bottom: 5px;
 }
 
-.company {
+.job-name {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
     color: #000;
     font-weight: bold;
 }
@@ -215,22 +231,22 @@ body {
     font-weight: bold;
 }
 
-.job-subtitle {
+.job-titre {
     margin: 0 0 15px 0;
     font-size: 14px;
     color: #a2915b;
     text-transform: uppercase;
 }
 
-.job-tasks {
+.job-description {
     margin: 0;
     padding-left: 20px;
     font-size: 14px;
-    color: #111;
+    color: #000;
     line-height: 1.6;
 }
 
-.job-tasks li {
+.job-description li {
     margin-bottom: 8px;
 }
 
@@ -303,7 +319,7 @@ body {
     .sidebar { padding: 120px 12px 12px 12px; }
     .name { font-size: 24px; }
     .title { font-size: 16px; }
-    .section-title { font-size: 18px; }
+    .section-titre { font-size: 18px; }
 }* {
     box-sizing: border-box;
 }
@@ -350,13 +366,6 @@ body {
     cursor: pointer;
 }
 
-
-.sidebar {
-    width: 35%;
-    background-color: #4b5333;
-    padding: 320px 25px 40px 35px;
-}
-
 .section {
     margin-bottom: 25px;
 }
@@ -369,7 +378,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.contact-item {
+.contact {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -377,7 +386,7 @@ body {
     color: #c4ca9f;
 }
 
-.contact-item .icon {
+.contact .icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +398,7 @@ body {
     margin-right: 12px;
     font-size: 12px;
 }
-.contact-item .icon img{
+.contact .icon img{
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -474,9 +483,9 @@ body {
     margin-bottom: 40px;
 }
 
-.section-title {
+.section-titre {
     margin: 0 0 25px 0;
-    font-size: 22px;
+    font-size: 25px;
     color: #4b5333;
     text-transform: uppercase;
     position: relative;
@@ -484,7 +493,7 @@ body {
     font-weight: bold;
 }
 
-.section-title::after {
+.section-titre::after {
     content: "";
     position: absolute;
     left: 0;
@@ -518,14 +527,14 @@ body {
     font-weight: bold;
 }
 
-.job-subtitle {
+.job-titre {
     margin: 0 0 15px 0;
-    font-size: 14px;
+    font-size: 15px;
     color: #a2915b;
     text-transform: uppercase;
 }
 
-.job-tasks {
+.job-description {
     margin: 0;
     padding-left: 20px;
     font-size: 14px;
@@ -533,8 +542,9 @@ body {
     line-height: 1.6;
 }
 
-.job-tasks li {
+.job-description li {
     margin-bottom: 8px;
+    font-size: 15px;
 }
 
 .education-list {
@@ -550,7 +560,7 @@ body {
 }
 
 
-.profile {
+/* .profile {
     position: absolute;
     top: 40px;
     left: 45px;
@@ -559,4 +569,4 @@ body {
     background-color: #fff;
     border-radius: 50%;
     z-index: 10;
-}
+} */
