@@ -101,7 +101,6 @@ body{
     object-fit:cover;
     display:block;
     margin:0 auto 20px auto;
-    border:5px solid #fff;
 }
 
 .section{
@@ -165,7 +164,8 @@ body{
 
 .job h4{
     font-weight:600;
-    color: #4D514A;
+    color:#E3DBBB
+;
 }
 
 .date{
