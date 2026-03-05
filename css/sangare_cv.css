@@ -1,10 +1,7 @@
-* {
-    
+* {  
     padding: 0;
     margin: 0;
-   
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 body{
     background: linear-gradient(#AEB784, #4D513A, #4D514A );
@@ -19,8 +16,7 @@ body{
 .nav {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-   
+    text-align: center; 
 }
 .nav .back,
 .nav .download{
@@ -108,16 +104,16 @@ body{
 .sidebar {
     background-color: var(--primaryColor);
     margin: 10px 0px 10px 10px;
-     border-bottom-left-radius: 9px;
-     border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
 }
 
 .main {
 
     background-color: white;
-     margin: 10px 10px 10px 0px;
-     border-top-right-radius: 9px;
-     border-bottom-right-radius: 9px;
+    margin: 10px 10px 10px 0px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
 }
 
 .img {
@@ -162,10 +158,8 @@ body{
     color: var(--primaryColor);
     text-transform: uppercase;
     font-weight: bold;
-     position: relative;
-  display: inline-block;
-
-
+    position: relative;
+    display: inline-block;
 }
 .job::after{
  content: "";
