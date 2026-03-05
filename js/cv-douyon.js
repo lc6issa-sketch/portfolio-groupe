@@ -1,3 +1,3 @@
-function downloadCV(){
-window.print();
+function messageCV() {
+    alert("CV téléchargé avec succès !");
 }

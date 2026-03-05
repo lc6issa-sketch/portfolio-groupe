@@ -21,6 +21,7 @@ body {
 .cv-buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
     margin: 20px auto;
     width: 95%;
@@ -253,10 +254,10 @@ body {
     }
 .left {
     width: 30%;
-    margin-top: -375px;
+    margin-top: -350px;
     }
 #left {
-    margin-top: 400px;
+    margin-top: 370px;
     }
 .right {
     width: 65%;
