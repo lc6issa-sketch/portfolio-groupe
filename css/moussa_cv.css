@@ -164,8 +164,7 @@ body{
 
 .job h4{
     font-weight:600;
-    color:#E3DBBB
-;
+    color:#E3DBBB;
 }
 
 .date{
@@ -201,12 +200,6 @@ body{
     color: #4D514A;
 }
 
-/* === BADGES POUR SKILLS === */
-.section ul li {
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
 @media(max-width:900px){
     .cv-container{
         flex-direction:column;
@@ -217,6 +210,10 @@ body{
     .header{
         margin:0;
     }
+    .pointPourExp,.pointPourExp1,.pointPourExp2,.pointPourEdu,.pointPourEdu1{
+        position: fixed;
+    }
+    
 }
 
 /* ligne horizontale sous profile*/
@@ -230,9 +227,6 @@ body{
         margin-bottom: 10px;
         padding-bottom:5px;
         color: #4D514A;
-        font-size: 1.3rem;
-       
-        
     }
     .lignehorizsousprof {
     padding-top: -30px;
@@ -273,10 +267,6 @@ body{
         margin-bottom: 10px;
         padding-bottom:5px;
         color: #4D514A;
-        font-size: 1.3rem;
-        
-       
-        
     }
     .lignehorizsousexp {
     padding-top: -30px;
@@ -317,10 +307,6 @@ body{
         margin-bottom: 10px;
         padding-bottom:5px;
         color: #4D514A;
-        font-size: 1.3rem;
-        
-       
-        
     }
     .lignehorizsoused {
     padding-top: -30px;
@@ -370,14 +356,13 @@ body{
 .ligneVerticale::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 10px;
     width: 3px;
     height: 100%;
     background-color: #555;
     z-index: 0;
 }
-
 
 .pointPourEdu {
     position: absolute;
@@ -440,18 +425,10 @@ body{
     border: 3px solid #555;
 }
 
-.eduClassIm{
-    position: absolute;
-    top: 820px;
-
-}
 @media print {
     @page{
         margin: 0;
 
-    }
-    #msg {
-        display: none;
     }
     #tele {
         display: none;
