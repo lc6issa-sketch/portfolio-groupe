@@ -79,8 +79,6 @@ nav a:hover{
 nav a:active{
   transform: scale(0.95);
 }
-
-
 #presentation{
   position: relative;
   min-height: calc(100svh - 72px); /* mieux que 100vh sur mobile */
