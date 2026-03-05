@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.cv-container {
+    width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    line-height: 20px;
+    padding-top: 50px;
+}
+
+/* ===== header ===== */
+.header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#AEB784 29%,#4D513A 76%,#4D513A 88%);
+    padding: 30px;
+    margin-left: 180px;
+    position: relative;
+    left: -40px;
+    z-index: 2;
+    margin-right: -40px;
+    color: white;
+}
+ h1{
+    color: white;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5e8c61;
+    object-fit: cover;
+    margin-left: -110px;
+}
+
+.intro {
+    margin-left: 90px;
+}
+
+.intro h1 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.intro h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* main */
+.main {
+    display: flex;
+}
+
+/* colonne gauche */
+.left {
+    width: 30%;
+    background-color: #6D7145;
+    padding: 25px;
+    color: white;
+    margin-top: -265px;
+}
+#left {
+    margin-top: 290px;
+    
+}
+
+#left p{
+    font-size: 12px;
+}
+
+.left h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left li {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* colonne droite */
+.right {
+    width: 65%;
+    padding: 30px;
+    padding-top: 30px;
+}
+
+
+.right h3 {
+    color: #6D7145;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h4 {
+    font-weight: bold;
+}
+
+.experience span {
+    font-size: 14px;
+    color: #41431B;
+}
+
+.experience ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.formation p {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.cv-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+/* animations */
+.right h3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.right h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #6D7145;
+    transition: width 0.3s ease;
+}
+
+.right h3:hover::after {
+    width: 100%;
+}
+/* Bouton retour */
+.retour {
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    border: 2px solid green;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.retour:hover {
+    background-color: #556b50;
+}
+
+/* Bouton télécharger */
+.telecharger {
+    background-color: white#2f3e46;
+    color: black;
+    margin-bottom: 10px;
+    border: 2px solid green;
+}
+
+.telecharger:hover {
+    background-color: #1b262c;
+}
