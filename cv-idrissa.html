@@ -1,0 +1,179 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Idrissa Gassama</title>
+    <link rel="stylesheet" href="css/styles_i.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/Telecharger.js" defer></script>
+    </head>
+    <body>
+    <div class="page">
+    <nav class="nav">
+    <a href="index.html" class="back">
+        <span class="btn_icon">←</span>
+        <span class="btn_text">Retour</span>
+    </a>
+
+    <button class="download" id="btnDownload">
+        <span class="btn_text2">⬇ Télécharger en PDF</span>
+    </button>
+    </nav>
+
+    <main class="cv">
+        <header class="cv-header">
+            <div class="hdr-photo">
+            <img src="images/idriss.jpeg" alt="Photo Idrissa Gassama">
+        </div>
+
+        <div class="hdr-square"></div>
+
+        <!-- Texte à droite -->
+        <div class="hdr-right">
+            <h1 class="hdr-name">Idrissa <span>Gassama</span></h1>
+            <h2 class="hdr-job">DÉVELOPPEUR FULL-STACK</h2>
+            <div class="hdr-line"></div>
+            <p class="hdr-desc">
+            Jeune diplômé en Génie Informatique, je conçois des applications web avec Angular,
+            Spring Boot et MySQL, avec une attention particulière à la sécurité et aux bonnes pratiques.
+            </p>
+        </div>
+        </header>
+
+        <aside class="cv-left">
+        <section class="block">
+            <h3 class="left-title">COORDONNÉES</h3>
+            <ul class="contact">
+            <li><span class="ico">☎</span><span>+223 72 76 88 14</span></li>
+            <li><span class="ico">✉</span><span>idrissag97@gmail.com</span></li>
+            <li><span class="ico">📍</span><span>Bamako / Niamakoro</span></li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h3 class="left-title">COMPÉTENCES</h3>
+            <ul class="bullets">
+            <li>Java</li>
+            <li>HTML, CSS &amp; JavaScript</li>
+            <li>Angular &amp; Spring Boot</li>
+            <li>MySQL</li>
+            <li>Bureautique (Word, Excel, PowerPoint)</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h3 class="left-title">QUALITÉS</h3>
+            <ul class="bullets">
+            <li>Autonomie et sens des responsabilités</li>
+            <li>Adaptabilité aux nouvelles technologies</li>
+            <li>Rigueur et souci du détail</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h3 class="left-title">LANGUES</h3>
+            <ul class="langs">
+            <li><span class="lang">Français</span> <span class="lvl">Bon niveau</span></li>
+            <li><span class="lang">Anglais</span> <span class="lvl">A2</span></li>
+            <li><span class="lang">Bambara</span> <span class="lvl">Langue maternelle</span></li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h3 class="left-title">CENTRES D’INTÉRÊT</h3>
+            <ul class="bullets">
+            <li>Data Science &amp; IA</li>
+            <li>Cybersécurité</li>
+            <li>Lecture &amp; autoformation</li>
+            <li>Sport (football, fitness)</li>
+            <li>Nouvelles technologies</li>
+            </ul>
+        </section>
+
+        </aside>
+
+        <section class="cv-right">
+        <section class="right-section">
+            <h3 class="right-title">EXPÉRIENCES PROFESSIONNELLES</h3>
+
+            <article class="xp">
+            <div class="xp-head">
+                <div>
+                <h4 class="xp-role">Développeur Full-Stack (Projet en équipe)</h4>
+                <div class="xp-company">MALISOFT — Bamako, Mali</div>
+                </div>
+                <div class="xp-date">Juin 2025 — Août 2025</div>
+            </div>
+            <ul class="xp-list">
+                <li>
+                Conception et développement d’une application web GRF (observations de piste) en appliquant
+                de bonnes pratiques full-stack.
+                </li>
+            </ul>
+            </article>
+
+            <article class="xp">
+            <div class="xp-head">
+                <div>
+                <h4 class="xp-role">Développeur Full-Stack (Stage académique)</h4>
+                <div class="xp-company">MALISOFT — Bamako, Mali</div>
+                </div>
+                <div class="xp-date">Juillet 2024 — Octobre 2024</div>
+            </div>
+            <ul class="xp-list">
+                <li>
+                Développement d’une application Angular + Spring Boot visant à améliorer la disponibilité
+                des médicaments via une solution moderne.
+                </li>
+            </ul>
+            </article>
+
+            <article class="xp">
+            <div class="xp-head">
+                <div>
+                <h4 class="xp-role">Assistant Bureautique (Formation &amp; Service)</h4>
+                <div class="xp-company">Cyber Selectic — Kalaban Coura, Bamako</div>
+                </div>
+                <div class="xp-date">Juin 2024 — Présent</div>
+            </div>
+            <ul class="xp-list">
+                <li>
+                Mise en forme de documents, assistance bureautique et support client (Word/Excel/PowerPoint).
+                </li>
+            </ul>
+            </article>
+
+            <article class="xp">
+            <div class="xp-head">
+                <div>
+                <h4 class="xp-role">Gérant de boutique &amp; Service Mobile Money</h4>
+                <div class="xp-company">Coulibaly Service — Niamakoro, Bamako</div>
+                </div>
+                <div class="xp-date">Janvier 2018 — Présent</div>
+            </div>
+            <ul class="xp-list">
+                <li>
+                Gestion d’une boutique multiservices : vente + opérations Orange Money / Moov Money.
+                </li>
+            </ul>
+            </article>
+        </section>
+
+        <section class="right-section">
+            <h3 class="right-title">FORMATIONS &amp; CERTIFICATIONS</h3>
+            <ul class="edu">
+            <li><span class="edu-year">2022 — 2025</span> : Licence professionnelle en Génie Informatique — ISA, Bamako</li>
+            <li><span class="edu-year">Déc 2024 — Fév 2025</span> : Meta Front-End Developer — Coursera</li>
+            <li><span class="edu-year">Nov 2024 — Déc 2024</span> : Meta Back-End Developer — Coursera</li>
+            <li><span class="edu-year">2016 — 2020</span> : Baccalauréat Scientifique — Lycée public de Niamakoro</li>
+            <li><span class="edu-year">2018</span> : DEF — École Fondamentale Ténéman Samaké</li>
+            </ul>
+        </section>
+
+        </section>
+
+    </main>
+    </div>
+    </body>
+    </html>

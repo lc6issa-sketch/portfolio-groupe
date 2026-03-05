@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( #AEB784, #4D513A, #4D514A );
 }
 
 .cv-container {
@@ -15,44 +15,46 @@ body {
 }
 
 /* COLONNE GAUCHE */
-.left {
+.gauche {
     width: 35%;
     background: #41431B;
     padding: 30px;
     color: #ffffff;
 }
 
-.left h3 {
+.gauche h3 {
     margin-top: 25px;
   
     padding-bottom: 5px;
 }
 
-.left ul {
+.gauche ul {
     padding-left: 15px;
 }
 
-.photo-container {
+.photo {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.photo-container img {
-    width: 160px;
-    height: 160px;
+.photo img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 6px solid white;
+   
 }
 
 /* COLONNE DROITE */
 .profil{
-    background-color: #8c6b52;
+    background-color: #AEB784;
     width: 1000px;
-    height: 160px;
-    margin-left: -20%;
-    margin-top: -10%;
+    height: 210px;
+     border-radius: 1%;
+    margin-left: 50%;
+    margin-top: -58%;
 }
-.right {
+.droite {
     width: 65%;
     padding: 40px;
 }
@@ -60,37 +62,45 @@ body {
 
 .top h1 {
     font-size: 32px;
-    color: #8c6b52;
-    margin-bottom: 5px;
+    color: white;
+    margin-bottom: 10px;
 }
 
-.top h2 {
+.droite h2 {
     text-transform: uppercase;
     color: #3b2d23;
+    margin-top: 90px;
+    padding-bottom: 10px;
 }
 
-.right h2 {
+.droite h2 {
     color: #8c6b52;
     border-bottom: 3px solid #cbb8a6;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .job {
     margin-top: 15px;
 }
+.formation{
+    margin-bottom: -50%;
+}
 
-
-
+/* La partie des bouttons */
 .buttons {
-    margin-top: 30px;
+    display: flex;            
+    justify-content: space-between; 
+    align-items: center;        
+    margin-top: 20px;   
+       width: 900px;    
+       margin-left: 200px;   
 }
 
 .btn {
     display: inline-block;
     padding: 10px 15px;
     margin-right: 10px;
-    background: #8c6b52;
+    background: #41431B;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -98,7 +108,7 @@ body {
 }
 
 .btn:hover {
-    background: #3b2d23;
+    background: #AEB784;
     transform: scale(1.05);
 }
 
@@ -110,7 +120,10 @@ body {
         flex-direction: column;
     }
 
-    .left, .right {
+    .gauche, .droite {
         width: 100%;
+    }
+    body {
+        flex-direction: column;
     }
 }

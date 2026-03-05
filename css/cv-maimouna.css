@@ -12,7 +12,6 @@ body {
     color: black;
     margin-bottom: 10px;
     border: 3px solid #6D7145;
-    margin-bottom: 10px;
 }
 .telecharger {
     color: black;
@@ -57,8 +56,8 @@ body {
     padding: 30px;
 }
 .photo img {
-    width: 140px;
-    height: 140px;
+    width: 220px;
+    height: 220px;
     margin: 0 auto 20px;
     display: block;
     border-radius: 50%;
@@ -75,16 +74,16 @@ body {
     line-height: 1.2;
     word-break: normal;
     overflow-wrap: break-word;
-    text-align: center;
+    text-align: left;
 }
 .intro h2 {
     color: black;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 .intro p{
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 /* main */
 .main {
@@ -170,6 +169,25 @@ body {
 .telecharger:hover {
     background-color: #E3DBBB;
 }
+
+.intro h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.intro h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #6D7145;
+    transition: width 0.3s ease;
+}
+.intro h2:hover::after {
+    width: 100%;
+}
 .right h3 {
     position: relative;
     display: inline-block;
@@ -235,19 +253,20 @@ body {
     }
 .left {
     width: 30%;
-    margin-top: -270px;
+    margin-top: -375px;
     }
 #left {
-    margin-top: 290px;
+    margin-top: 400px;
     }
 .right {
     width: 65%;
     }
 .photo img {
-    margin-left: -110px;
+    margin-left: -140px;
+    margin-right: 40px;
     }
 .intro {
-    margin-left: 90px;
+    margin-left: 10px;
     }
 .cv-buttons {
     flex-direction: row;
