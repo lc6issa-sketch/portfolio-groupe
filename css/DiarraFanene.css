@@ -3,12 +3,6 @@ body{
     min-height: 100vh;
     background: linear-gradient( #AEB784, #4D513A, #4D514A );
 }
-.ndiv{
-    width:70%;
-    height: 70px;
-    margin-top: 20px;
-    margin-left: 190px;
-}
 .nav{
     padding-top: 20px;
     display: flex;
@@ -23,7 +17,6 @@ body{
     border-radius: 30px;
     text-decoration: none;
     font-weight: 700;
-    color: white;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.4);
     transition: all 0.3s ease;
@@ -43,27 +36,6 @@ body{
     .back{
         margin-left: 190px;
         padding: 10px 52px;
-    }
-}
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(100%);
-        opacity: 0;
     }
 }
 .Folio{
@@ -91,31 +63,12 @@ body{
          flex-direction: column;
          width: 360px;
          height: 900px;
-        .fol1{
+        .fol1 .fol2 .fol3 .fol4{
         font-size:18px ;
         display: flex;
         margin-left: 10px;
         color: rgb(233, 208, 153);
-      
-        }
-        .fol2{
-        font-size:18px ;
-        display: flex;
-        margin-left: 10px;
-        color: rgb(199, 184, 152);
-        }
-        .fol3{
-        font-size:18px ;
-        display: flex;
-        margin-left: 10px;
-        color:  rgb(199, 184, 152);
-        }
-        .fol4{
-        font-size:18px ;
-        display: flex;
-        margin-left: 10px;
-        color:  rgb(199, 184, 152);
-        }
+       }
         .divcord{
             width: 100%;
             margin-bottom: 20px;
@@ -247,7 +200,7 @@ body{
     }
     .circular{
         position: absolute;
-        background: wheat;
+        background: white;
         width: 190px;
         height: 190px;
         border: 8px solid white;
@@ -318,14 +271,14 @@ body{
         }
         }
       
-         p {
+         /* p {
         display: inline-block;
         margin-left: 120px;
         font-weight: 500;
         font-size: 16px;
         padding: 3px 12px;
         border-radius: 15px;
-        }
+        } */
         h3 {
         font-size: 22px;
         font-weight: 600;
@@ -344,7 +297,6 @@ body{
         display: flex;
          font-size: 16px;
         align-items: center;
-        /* position: relative; */
         strong{
         font-size: 30px;
         color: #1a1919;
@@ -617,12 +569,6 @@ body{
         font-size: 14px !important;
     }
     
-    .successM {
-        left: 20px;
-        right: 20px;
-        width: auto;
-        font-size: 14px;
-    }
     
     .divcord .icon {
         width: 20px;
