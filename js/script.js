@@ -1,14 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+const cards = document.querySelectorAll(".card");
 
-    document.getElementById("downloadbtn").addEventListener("click", function () {
-       
-        
-    const lien = document.createElement("a");
-    lien.href = "images/ismo_cv.pdf"; 
-    lien.download = "Mon_CV.pdf";
-    document.body.appendChild(lien);
-    lien.click();
-    document.body.removeChild(lien);
-    });
-
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
 });
