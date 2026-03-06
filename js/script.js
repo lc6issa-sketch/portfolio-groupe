@@ -7,3 +7,7 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
+
+cards.forEach(card => {
+  observer.observe(card);
+});
