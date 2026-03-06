@@ -1,10 +1,7 @@
-* {
-    
+* {  
     padding: 0;
     margin: 0;
-   
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 body{
     background: linear-gradient(#AEB784, #4D513A, #4D514A );
@@ -16,125 +13,54 @@ body{
     --uxTitleColor: #A4955B;
 }
 
-
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
+    text-align: center; 
+}
+.nav .back,
+.nav .download{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.4);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 
-.nav a {
-    text-decoration: none;
-    color: antiquewhite;
+.nav .back:hover,
+.nav .download:hover{
+  background: #E3DBBB;
+  color: #4b4f1f;
+  border-color: #E3DBBB;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.nav .back:active,
+.nav .download:active{
+  transform: scale(0.95);
 }
 
 
-.back {
-    background: transparent;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    padding: 12px 25px;
-    transition: all 0.3s ease;
-    gap: 10px; 
+.nav .download{
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.back .btn_text {
-    font-size: 16px;
-    font-weight: 500;
-    color: antiquewhite;
-    position: relative;
-    z-index: 2;
-    transition: color 0.3s ease;
-}
-
-.back .btn_icon {
-    font-size: 24px;
-    color: antiquewhite;
-    position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease;
-}
-
-.back::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 80%;
-    top: 0;
-    background: linear-gradient(90deg,#4D513A, #AEB784);
-    transition: left 0.4s ease;
-    border-radius: 15px;
-    z-index: 1;
-}
-
-.back:hover::before {
-    left: 0;
-}
-
-.back:hover .btn_text,
-.back:hover .btn_icon {
-    color: white;
-}
-
-.back:hover .btn_icon {
-    transform: translateX(-5px);
-}
-
-.back:active {
-    transform: scale(0.95);
-}
-
-
-.download {
-    background: transparent;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-    padding: 12px 25px;
-    transition: all 0.3s ease;
-}
-
-.download .btn_text2 {
-    font-size: 16px;
-    font-weight: 500;
-    color: antiquewhite;
-    position: relative;
-    z-index: 2;
-    transition: color 0.3s ease;
-}
-
-.download::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -100%;
-    top: 0;
-    background: linear-gradient(90deg,#4D513A, #AEB784);
-    transition: left 0.4s ease;
-    border-radius: 15px;
-    z-index: 1;
-}
-
-.download:hover::before {
-    left: 0;
-}
-
-.download:hover .btn_text2 {
-    color: white;
-}
-
-.download:active {
-    transform: scale(0.95);
-}
 
 
 @media (max-width: 600px) {
@@ -178,16 +104,16 @@ body{
 .sidebar {
     background-color: var(--primaryColor);
     margin: 10px 0px 10px 10px;
-     border-bottom-left-radius: 9px;
-     border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
 }
 
 .main {
 
     background-color: white;
-     margin: 10px 10px 10px 0px;
-     border-top-right-radius: 9px;
-     border-bottom-right-radius: 9px;
+    margin: 10px 10px 10px 0px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
 }
 
 .img {
@@ -210,7 +136,7 @@ body{
 }
 
 .textContain {
-    margin-left: 10%;
+    margin-left: 14%;
     & p {
         padding-top: 15px;
     }
@@ -232,10 +158,8 @@ body{
     color: var(--primaryColor);
     text-transform: uppercase;
     font-weight: bold;
-     position: relative;
-  display: inline-block;
-
-
+    position: relative;
+    display: inline-block;
 }
 .job::after{
  content: "";
@@ -276,11 +200,11 @@ body{
 
 .coordonnee {
     display: flex;
-    padding-left: 29px;
+    padding-left: 18px;
     padding-top: 10px;
 }
 .arret{
-    padding-left: 31px;
+    padding-left: 20px;
 }
 .mail {
   word-break: break-all;
@@ -299,7 +223,7 @@ body{
 
 .sidebar-section-title {
     text-transform: uppercase;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .sidebar-section-title,
@@ -327,6 +251,7 @@ body{
     flex-direction: column;
 
     & .titre {
+        font-size: 26px;
         text-transform: uppercase;
         color: var(--primaryColor);
         padding-left: 31px;
