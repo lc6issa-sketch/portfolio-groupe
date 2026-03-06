@@ -206,30 +206,52 @@ body {
     justify-content: space-between;
 }
 .btn-left{
-    background-color:#AEB784;
-    color: #000;
+    background-color: #41431B;
+    color:white;
 }
-.btn-right{
-    background-color: #AEB784;
-    color: #000;
+/*.btn-right{
+    background-color: #41431B;
+    color: white;
 }
 .btn-left a{
     text-decoration: none;
-    color: #000;
-}
-.btn-left,.btn-right{
+    color: white;
+}*/
+.cv-action a{
+    text-decoration: none;   /* enlève le soulignement */
     padding: 10px 20px;
-    border: 2px solid #AEB784;
-    border-radius: 12px ;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
     font-size: 14px;
     cursor: pointer;
+    background: #41431B;
+    
 }
-.Downlaod{
+.cv-action a:hover{
+    background-color: white;
+    border-color:white ;
+    color: #41431B;
+}
+/*.cv-action a{
+    padding: 10px 20px;
+   border-color: #fff;
+    border-radius: 20px ;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:#41431B:;
+    color: white;
+    text-decoration:none
+}
+.btn-left:hover, .btn-right:hover{
+    background-color: white;
+    color: #41431B;
+    border-color: white;
+}*/
+#Downlaod-message {
     display: none;
     color: #4D513A;
     margin-top: 10px;
-}
-#Downlaod-message {
     text-align: center;
     margin-bottom: 15px;
     color: #fff;
