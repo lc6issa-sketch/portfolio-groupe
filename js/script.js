@@ -24,14 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("downloadbtn").addEventListener("click", function () {
        
-        let elt = document.querySelector(".container");
         
-        const opt = {
-            filename: 'CV.pdf',
-            
-        };
-
-        html2pdf().set(opt).from(elt).save();
+    const lien = document.createElement("a");
+    lien.href = "images/ismo_cv.pdf"; 
+    lien.download = "Mon_CV.pdf";
+    document.body.appendChild(lien);
+    lien.click();
+    document.body.removeChild(lien);
     });
 
 });
