@@ -147,6 +147,13 @@ body {
     margin-bottom: 8px;
     font-size: 14px;
 }
+.ligne {
+  width: 120px;
+  border: none;
+  height: 3px;
+  background-color: #41431B;
+  margin-bottom: 65px;
+}
 
 /* animations*/
 
