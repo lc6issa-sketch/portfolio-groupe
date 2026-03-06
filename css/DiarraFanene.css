@@ -1,3 +1,6 @@
+*{
+     font-family: Arial, Helvetica, sans-serif;
+}
 body{
     margin: 0 ;
     min-height: 100vh;
@@ -44,7 +47,7 @@ body{
     width:70%;
     min-height: 220vh;
     margin:40px auto ;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(1, 1, 1, 0.6);
     .leftside{
         position: absolute;
@@ -52,8 +55,8 @@ body{
         min-height: 220vh;
         display: flex;
         background: #4D513A;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px; 
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; 
         z-index: 1;
     }
     .subtitle{
@@ -91,7 +94,7 @@ body{
             list-style: none;
             margin-bottom: 8px;
             color: white ;
-            font-size: 20px ;
+            font-size: 16px ;
             }
             .li1:last-child{
             margin-bottom: 0;
@@ -116,7 +119,7 @@ body{
             align-items: center;
             margin-bottom: 5px;
             color:white ;
-            font-size: 16px ;
+            font-size: 14px ;
             strong{
                 margin-right: 5px;
                 font-size: 35px;
@@ -139,7 +142,7 @@ body{
             align-items: center;
             margin-bottom: 5px;
             color:white ;
-            font-size: 16px ;
+            font-size: 14px ;
             strong{
                 margin-right: 5px;
                 font-size: 35px;
@@ -162,7 +165,7 @@ body{
             align-items: center;
             margin-bottom: 5px;
             color: white ;
-            font-size: 16px ;
+            font-size: 14px ;
             strong{
                 margin-right: 5px;
                 font-size: 35px;
@@ -219,8 +222,8 @@ body{
     .centrale{
         position: absolute;
         width:65%;
-        min-height: 144vh;
-        margin-top: 37.9%;
+        min-height: 140vh;
+        margin-top: 38.5%;
         margin-left: 35.1%;
         display: flex;
         flex-direction: column;
@@ -228,7 +231,7 @@ body{
         padding: 40px 50px 40px 40px;
         box-sizing: border-box;
         .centralh {
-        padding-top: 40px;
+        padding-top: 32px;
         font-size: 25px;
         font-weight: bold;
         color:  #66695a;
@@ -248,12 +251,6 @@ body{
             margin-left: 10px;
             font-size: 14px;
         }
-        .dv1{
-            padding-top: 0;
-        }
-        .div{
-            padding-top: 0;
-        }
         .centralh:first-of-type {
          margin-top: 0;
         }
@@ -270,20 +267,11 @@ body{
             padding-top: 10px;
         }
         }
-      
-         /* p {
-        display: inline-block;
-        margin-left: 120px;
-        font-weight: 500;
-        font-size: 16px;
-        padding: 3px 12px;
-        border-radius: 15px;
-        } */
         h3 {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 600;
-        color:rgb(233, 208, 153) ;;
-        margin: 10px 0 15px 0;
+        color:rgb(233, 208, 153) ;
+        margin: 5px 0 2px 0;
         font-style:initial;
         padding-left: 15px;
         }
@@ -318,9 +306,7 @@ body{
         content: "";
         font-size: 14px;
         }
-
-    }
-    
+    }  
 }
 /* Grands écrans (1200px et moins) */
 @media screen and (max-width: 1200px) {
