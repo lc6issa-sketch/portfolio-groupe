@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
        
         
     const lien = document.createElement("a");
-    lien.href = "image/ismo_cv.pdf"; 
+    lien.href = "pdf/ismo_cv.pdf"; 
     lien.download = "Mon_CV.pdf";
     document.body.appendChild(lien);
     lien.click();
