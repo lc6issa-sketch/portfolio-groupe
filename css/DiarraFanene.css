@@ -14,14 +14,37 @@ body{
     display: flex;
     align-items: center;
     a{
-        text-decoration: none; 
-        color: antiquewhite;
+    text-decoration: none; 
+    color: antiquewhite;
     }
     button{
-      padding: 12px 60px;
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    transition: all 0.3s ease;
+    }
+    button:hover{
+      background: #E3DBBB;
+      color: #4b4f1f;
+      border-color: #E3DBBB;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+
+    }
+    .download{
+        margin-left: 560px;
+        padding: 10px 42px;
+    }
+    .back{
+        padding: 10px 52px;
     }
     /*button retour*/
-    .back{
+    /* .back{
         background: transparent;
         position: relative;
         border: none;
@@ -54,6 +77,7 @@ body{
         height: 100%;
         left: -100%;
         top: 0;
+        box-shadow: 0 4px 8px rgba(1, 1, 1, 0.6);
         background: linear-gradient(90deg,#4D513A, #AEB784);
         transition: left 0.4s ease;
         border-radius: 15px;
@@ -71,9 +95,9 @@ body{
     }
     .back:active{
         transform: scale(0.95);
-    }
+    } */
     /*button de telechargement*/
-    .download{
+    /* .download{
          background: transparent;
         position: relative;
         border: none;
@@ -83,7 +107,7 @@ body{
         gap: 10 px;
         margin-left: 510px;
         .btn_text2{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: antiquewhite;
         position: relative;
@@ -98,6 +122,7 @@ body{
         height: 100%;
         left: -100%;
         top: 0;
+        box-shadow: 0 4px 8px rgba(1, 1, 1, 0.6);
         background: linear-gradient(90deg,#4D513A, #AEB784);
         transition: left 0.4s ease;
         border-radius: 15px;
@@ -111,7 +136,7 @@ body{
     }
     .download:active{
         transform: scale(0.95);
-    }
+    } */
 }
 .successM {
     position: fixed;
@@ -161,25 +186,24 @@ body{
     position: relative;
     background: white;
     width:70%;
-    min-height: 200vh;
+    min-height: 220vh;
     margin:40px auto ;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.6);
     .leftside{
         position: absolute;
-        width:35%;
-        min-height: 200vh;
+        width:38%;
+        min-height: 220vh;
         display: flex;
         background: #4D513A;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px; 
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; 
         z-index: 1;
     }
     .subtitle{
          position: absolute;
          margin-top: 130%;
+         margin-left: 8%;
          flex-direction: column;
          width: 360px;
          height: 900px;
@@ -229,7 +253,7 @@ body{
             align-items: center;
             list-style: none;
             margin-bottom: 8px;
-            color: rgb(233, 208, 153) ;
+            color: white ;
             font-size: 20px ;
             }
             .li1:last-child{
@@ -239,7 +263,7 @@ body{
             font-size: 16px ;
             font-weight: 500;
             margin-left: 10px;
-            color: rgb(233, 208, 153) ;
+            color: white ;
             line-height: 1.4;
            }
         }
@@ -254,11 +278,12 @@ body{
             display: flex;
             align-items: center;
             margin-bottom: 5px;
-            color: rgb(233, 208, 153) ;
+            color:white ;
             font-size: 16px ;
             strong{
+                margin-right: 5px;
                 font-size: 35px;
-                color: #1a1919;
+                color: black;
             }
             }
             .li2:last-child{
@@ -276,11 +301,12 @@ body{
             display: flex;
             align-items: center;
             margin-bottom: 5px;
-            color: rgb(233, 208, 153) ;
+            color:white ;
             font-size: 16px ;
             strong{
+                margin-right: 5px;
                 font-size: 35px;
-                color: #1a1919;
+                color: black;
             }
             }
             .li3:last-child{
@@ -298,11 +324,12 @@ body{
             display: flex;
             align-items: center;
             margin-bottom: 5px;
-            color: rgb(233, 208, 153) ;
+            color: white ;
             font-size: 16px ;
             strong{
+                margin-right: 5px;
                 font-size: 35px;
-                color: #1a1919;
+                color: black;
             }
             }
             .li4:last-child{
@@ -313,8 +340,8 @@ body{
     .spacename{
         position: absolute;
         margin-top: 10%;
-        margin-left: 23%;
-        width: 77%;
+        margin-left: 16%;
+        width: 84%;
         height: 300px;
         background: #AEB784;
         border-top-left-radius: 8px;
@@ -340,8 +367,8 @@ body{
         width: 190px;
         height: 190px;
         border: 8px solid white;
-        margin-top: 14%;
-        margin-left: 14%;
+        margin-top: 16%;
+        margin-left: 5%;
         border-radius: 50%;
         z-index: 3;
         .profil{
@@ -369,12 +396,16 @@ body{
         font-weight: bold;
         color:  #66695a;
         letter-spacing: 1px;
+        text-decoration: underline;
+        text-underline-offset: 8px;
         }
         .centralh1 {
         font-size: 25px;
         font-weight: bold;
         color:  #66695a;
         letter-spacing: 1px;
+        text-decoration: underline;
+        text-underline-offset: 8px;
         }
         .Sp{
             margin-left: 10px;
@@ -394,7 +425,7 @@ body{
         align-items: center;
         justify-content: space-between;
         .ch2 {
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 600;
         color:black;
         }
@@ -414,7 +445,7 @@ body{
         h3 {
         font-size: 22px;
         font-weight: 600;
-        color:#aab18b;
+        color:rgb(233, 208, 153) ;;
         margin: 10px 0 15px 0;
         font-style:initial;
         padding-left: 15px;
