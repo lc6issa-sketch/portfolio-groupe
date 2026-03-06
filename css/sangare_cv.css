@@ -200,11 +200,11 @@ body{
 
 .coordonnee {
     display: flex;
-    padding-left: 29px;
+    padding-left: 18px;
     padding-top: 10px;
 }
 .arret{
-    padding-left: 31px;
+    padding-left: 20px;
 }
 .mail {
   word-break: break-all;
@@ -223,7 +223,7 @@ body{
 
 .sidebar-section-title {
     text-transform: uppercase;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .sidebar-section-title,
@@ -251,6 +251,7 @@ body{
     flex-direction: column;
 
     & .titre {
+        font-size: 26px;
         text-transform: uppercase;
         color: var(--primaryColor);
         padding-left: 31px;
