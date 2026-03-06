@@ -31,26 +31,25 @@ body{
 }
 
 .btn-retour{
-    background:transparent;
+    background:#4A4F1D;
     border:2px solid rgba(255,255,255,0.5);
     color: white;
 }
 
 .btn-retour:hover{
-    background: rgba(255,255,255,0.2);
-    border-color: white;
+    background: #AEB784;
     color: white;
 }
 
 .btn-download{
-    background: linear-gradient(90deg, #AEB784, #AEB784);
-    box-shadow: 0 4px 15px rgba(255,215,0,0.3);
+    background: #4A4F1D;
     color: #fff;
 }
 
 .btn-download:hover{
-    transform:scale(1.05);
-    background: linear-gradient(90deg, #AEB784, #4D513A);
+        background: #AEB784;
+        border: none;
+
 }
 
 /* === MESSAGE TELECHARGEMENT === */

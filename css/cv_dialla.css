@@ -16,6 +16,32 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.top-buttons{
+    display:flex;
+ justify-content: space-between;
+    margin-bottom:20px;
+    gap: 10px;
+}
+
+
+
+button{
+    padding:10px 20px;
+    background:#4A4F1D;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+button a{
+  text-decoration: none;
+  color:white ;
+}
+button:hover {
+    background: #AEB784;
+    transform: scale(1.05);
+}
+
 .profil {
   background-color: #aeb784;
   width: 100%;
