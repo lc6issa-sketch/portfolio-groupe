@@ -6,9 +6,9 @@ function downloadCV(){
 
 const link=document.createElement("a");
 
-link.href="CV_Oumar_Kanadji.pdf";
+link.href="image/CV_Oumar_Kanadji.pdf";
 
-link.download="CV_Oumar_Kanadji.pdf";
+link.download="image/CV_Oumar_Kanadji.pdf";
 
 link.click();
 
