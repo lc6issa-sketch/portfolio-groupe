@@ -6,13 +6,15 @@
     <title>CV de Mahamadou Alhabibou</title>
     <link rel="stylesheet" href="css/cv-Mahamadou.css">
     <!-- Bibliothèque pour générer le PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+      <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="js/cv-Mahamadou.js" defer></script>
 </head>
 <body>
-    <div class="top-buttons">
+   <div class="top-buttons">
         <a href="index.html" class="btn">← Retour</a>
-        <button class="btn btn-pdf" onclick="telechargerPDF()">📥 Télécharger PDF</button>
+        <button class="btn btn-pdf" id="btn-telecharger">📥 Télécharger PDF</button>
     </div>
 
     <div class="cv" id="cv-contenu">
@@ -24,10 +26,12 @@
 
             <div class="left-content">
                 <h3>COORDONNÉES</h3>
-                <p>+223 83 37 38 98</p>
-                <p>medmo7374@gmail.com</p>
-                <p>Kalaban Coura ACI, Bamako</p>
-
+                <!-- <p class="icon"> <img src="images/medtelephone.png" alt="">+223 83 37 38 98</p>
+                <p class="icon"> <img src="images/medgmail.png" alt="">medmo7374@gmail.com</p>
+                <p class="icon"> <img src="images/medLocalisation.png" alt="">Kalaban Coura ACI, Bamako</p> -->
+                    <p><i class="fa-solid fa-phone"></i> +223 83 37 38 98 </p>
+        <p><i class="fa-solid fa-envelope"></i> medmo7374@gmail.com</p>
+        <p><i class="fa-solid fa-house"></i> Kalaban Coura ACI, Bamako</p>
                 <h3>COMPÉTENCES</h3>
                 <ul>
                     <li>Maintenance PC</li>
