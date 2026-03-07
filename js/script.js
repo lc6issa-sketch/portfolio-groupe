@@ -1,15 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+const cards = document.querySelectorAll(".card");
 
-    document.getElementById("downloadbtn").addEventListener("click", function () {
-       
-        let elt = document.querySelector(".container");
-        
-        const opt = {
-            filename: 'CV.pdf',
-            
-        };
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
 
-        html2pdf().set(opt).from(elt).save();
-    });
-
+cards.forEach(card => {
+  observer.observe(card);
 });
