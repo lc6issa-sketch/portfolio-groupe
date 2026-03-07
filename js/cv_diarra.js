@@ -22,7 +22,7 @@
             downloadLink.addEventListener('click', function(e) {
              e.preventDefault();
               const link = document.createElement('a');
-              link.href = 'images/diarra.pdf';
+              link.href = 'pdf/diarra.pdf';
               link.download = 'diarra.pdf'; 
               document.body.appendChild(link);
               link.click();

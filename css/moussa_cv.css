@@ -1,0 +1,438 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(#AEB784, #4D513A, #4D514A);
+    padding:40px 20px;
+}
+
+/* === Les  BOUTONS EN HAUT === */
+.top-buttons{
+    max-width:1100px;
+    margin:0 auto 20px auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.btn{
+    padding:12px 25px;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+    text-decoration:none;
+    color:white;
+}
+
+.btn-retour{
+    background:#4A4F1D;
+    border:2px solid rgba(255,255,255,0.5);
+    color: white;
+}
+
+.btn-retour:hover{
+    background: #AEB784;
+    color: white;
+}
+
+.btn-download{
+    background: #4A4F1D;
+    color: #fff;
+}
+
+.btn-download:hover{
+        background: #AEB784;
+        border: none;
+
+}
+
+/* === MESSAGE TELECHARGEMENT === */
+.message{
+    text-align:center;
+    margin-bottom:15px;
+    color: #fff;
+    font-weight:600;
+    display:none;
+    background: #4D514A;
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* === container de mon CV  === */
+.cv-container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    display:flex;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    animation:fadeIn 1s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* === LEFT SIDE === */
+.left{
+    width:35%;
+    background: #AEB784;
+    padding:30px;
+}
+
+.profile-pic{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h3{
+    margin-bottom:10px;
+    border-bottom: 2px solid #4D514A;
+    padding-bottom:5px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.section ul li{
+    margin-bottom:8px;
+    font-size:14px;
+    position: relative;
+}
+
+/* === RIGHT SIDE === */
+.right{
+    width:65%;
+    padding:40px;
+}
+
+.header{
+    background: linear-gradient(90deg, #4D514A, #4D513A);
+    color:white;
+    padding:25px;
+    margin:-40px -40px 30px -40px;
+    border-bottom: 4px solid #4D514A;
+}
+
+.header h1{
+    font-size:36px;
+    letter-spacing: 1px;
+}
+
+.header h2{
+    font-weight:400;
+    margin-top:5px;
+    color: #ffff;
+}
+
+.right-section{
+    margin-bottom:30px;
+    margin-top: 20px;
+}
+
+.right-section h3{
+    margin-bottom:10px;
+    padding-bottom:5px;
+    color: #4D514A;
+    font-size: 1.3rem;
+}
+
+.job{
+    margin-bottom:20px;
+}
+
+.job h4{
+    font-weight:600;
+    color:#E3DBBB;
+}
+
+.date{
+    float:right;
+    font-size:14px;
+    color: #4D514A;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight:    600;
+}
+
+.job ul{
+    margin-top:8px;
+    padding-left:20px;
+}
+
+.job ul li{
+    font-size:14px;
+    margin-bottom:5px;
+    color: #333;
+}
+
+.job ul li::marker{
+    color: #4D514A;
+}
+
+.edu{
+    margin-bottom:15px;
+    color: #333;
+}
+
+.edu strong{
+    color: #4D514A;
+}
+
+@media(max-width:900px){
+    .cv-container{
+        flex-direction:column;
+    }
+    .left,.right{
+        width:100%;
+    }
+    .header{
+        margin:0;
+    }
+    .pointPourExp,.pointPourExp1,.pointPourExp2,.pointPourEdu,.pointPourEdu1{
+        position: fixed;
+    }
+    
+}
+
+/* ligne horizontale sous profile*/
+.profilImagText{
+    display: flex;
+    width: 900px;
+    height: 20px;
+    margin-bottom: 30px;
+    .h3p{
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding-bottom:5px;
+        color: #4D514A;
+    }
+    .lignehorizsousprof {
+    padding-top: -30px;
+    position: relative;
+    padding-left: 30px;
+    
+}
+    .lignehorizsousprof::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 600px;
+        margin-left: 30px;
+        height: 3px;
+        bottom: -5px;
+        margin-bottom: 10px;
+        background-color: #555;
+
+    }
+    .profile{
+        padding-top: 30px;
+        padding-right: 5px;
+        width: 30px;
+        position: absolute;
+        top: -25px;
+        
+    }
+   
+}
+/* ligne horizontale sous experience*/
+.expImagText{
+    display: flex;
+    width: 900px;
+    height: 20px;
+    margin-bottom: 30px;
+    .h3E {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding-bottom:5px;
+        color: #4D514A;
+    }
+    .lignehorizsousexp {
+    padding-top: -30px;
+    position: relative;
+    padding-left: 30px;
+    
+}
+    .lignehorizsousexp::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 600px;
+        margin-left: 30px;
+        height: 3px;
+        bottom: -5px;
+        margin-bottom: 10px;
+        background-color: #555;
+
+    }
+    .experience{
+        padding-top: 30px;
+        padding-right: 5px;
+        width: 30px;
+        position: absolute;
+        top:-30px;
+        
+    }
+   
+}
+/* ligne horizontale sous education*/
+.eduImagText{
+    display: flex;
+    width: 900px;
+    height: 20px;
+    margin-bottom: 30px;
+    .h3Ed {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding-bottom:5px;
+        color: #4D514A;
+    }
+    .lignehorizsoused {
+    padding-top: -30px;
+    position: relative;
+    padding-left: 30px;
+    
+}
+    .lignehorizsoused::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 600px;
+        margin-left: 30px;
+        height: 3px;
+        bottom: -5px;
+        margin-bottom: 10px;
+        background-color: #555;
+
+    }
+    .education{
+        padding-top: 30px;
+        padding-right: 5px;
+        width: 30px;
+        position: absolute;
+        top:-30px;
+        
+    }
+   
+}
+/* ligne verticale  415*/
+.ligneVerticale {
+    padding-top: 0;
+    position: relative;
+    padding-left: 30px;
+}
+/*
+.idv{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10px;
+}
+*/
+
+.ligneVerticale::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 3px;
+    height: 100%;
+    background-color: #555;
+    z-index: 0;
+}
+
+.pointPourEdu {
+    position: absolute;
+    left: 3px;
+    top: 50px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourEdu1 {
+    position: absolute;
+    left: 3px;
+    top: 105px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp {
+    position: absolute;
+    left: 3px;
+    top: 53px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp1 {
+    position: absolute;
+    left: 3px;
+    top: 193px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourExp2 {
+    position: absolute;
+    left: 3px;
+    top: 315px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+.pointPourProf {
+    position: absolute;
+    left: 3px;
+    top: 70px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #555;
+}
+
+@media print {
+    @page{
+        margin: 0;
+
+    }
+    #tele {
+        display: none;
+    }
+    #acc {
+        display: none;
+    }
+}
