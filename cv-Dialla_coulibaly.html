@@ -7,12 +7,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="css/cv_dialla.css" />
     <title>CV Dialla</title>
     <script src="js/cv_dialla.js" defer></script>
+    
   </head>
   <body>
+   <div class="top-buttons">
+     <button  id="downloadbtn btn"><a href="index.html" >Retour</a></button>
+        <button  id="downloadbtn">
+        Télécharger
+    </button>
+   </div>
+
+<div id="cv" class="container_parent">
     <header class="profil">
       <h1 class="firstname">Dialla</h1>
       <h1>COULIBALY</h1>
@@ -20,8 +29,11 @@
     </header>
     <main class="container">
       <aside class="container_left">
+        <div>
+          
+        </div>
         <img
-          src="images/IMG_20240417_111423~2.jpg"
+          src="images/photodialla.jpg"
           class="ronder_cercle_image"
           alt="Photo de profil"
         />
@@ -33,8 +45,8 @@
             L’Université Technolab Ista de Bamako-Mali
           </p>
           <p>
-            2022-2024 : Diplôme Technicien Spécialisé en développement digital
-            full stack à l’Institut Spécialisé de Technologie Appliquée ISTA Al
+            2022-2024 : Diplôme Technicien Spécialisé en développement digital option Web
+            Full Stack à l’Institut Spécialisé de Technologie Appliquée ISTA Al
             Hoceima-Maroc
           </p>
           <p>
@@ -79,7 +91,8 @@
           <p>
             Récemment diplômée en Génie Logiciel et Technologie Web à
             L’Université Technolab Ista, je suis passionnée par la
-            programmation. Je cherche à débuter ma carrière en tant que
+            programmation. <br>
+            Je cherche à débuter ma carrière en tant que
             développeuse et à contribuer à des projets intéressants.
           </p>
         </section>
@@ -122,5 +135,7 @@
         </section>
       </section>
     </main>
+</div>
   </body>
+  
 </html>
