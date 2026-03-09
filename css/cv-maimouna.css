@@ -99,7 +99,9 @@ body {
     color: white;
     margin-top: 0;
     margin-left: 5px;
+    margin-bottom: 5px;
     border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 #left p{
     font-size: 14px;
@@ -147,12 +149,21 @@ body {
     margin-bottom: 8px;
     font-size: 14px;
 }
-.ligne {
-  width: 120px;
+.ligne1 {
+  width: 160px;
   border: none;
   height: 3px;
   background-color: #41431B;
-  margin-bottom: 65px;
+  margin-top: -7px;
+  margin-bottom: 14px;
+}
+.ligne2 {
+  width: 60px;
+  border: none;
+  height: 3px;
+  background-color: #41431B;
+  margin-top: -7px;
+  margin-bottom: 14px;
 }
 
 /* animations*/
@@ -160,27 +171,16 @@ body {
 .intro h2 {
     position: relative;
     display: inline-block;
-    cursor: pointer;
 }
-.intro h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: #6D7145;
-    transition: width 0.3s ease;
-}
-.intro h2:hover::after {
+.right h4:hover::after {
     width: 100%;
 }
-.right h3 {
+.right h4 {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
-.right h3::after {
+.right h4::after {
     content: "";
     position: absolute;
     left: 0;
@@ -190,7 +190,7 @@ body {
     background-color: #6D7145;
     transition: width 0.3s ease;
 }
-.right h3:hover::after {
+.right h4:hover::after {
     width: 100%;
 }
 .left h3 {
