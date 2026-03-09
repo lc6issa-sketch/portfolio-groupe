@@ -1,0 +1,342 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(#AEB784,#4D513A,#4D514A);
+color:white;
+}
+
+/* CONTAINER */
+
+.container{
+display:flex;
+padding:100px;
+justify-content:center;
+margin:auto;
+}
+
+
+/* ======================
+SIDEBAR
+====================== */
+
+.sidebar{
+width:25%;
+background:#41431B;
+color:white;
+padding:330px 40px 80px 40px;
+}
+
+.left-content h3{
+margin-top:45px;
+margin-bottom:18px;
+font-size:15px;
+letter-spacing:1.5px;
+}
+
+.left-content p{
+margin-bottom:14px;
+line-height:1.8;
+font-size:14px;
+}
+
+.left-content ul{
+margin-bottom:30px;
+padding-left:18px;
+}
+
+.left-content li{
+margin-bottom:10px;
+line-height:1.8;
+font-size:14px;
+}
+
+
+/* ======================
+CONTENT
+====================== */
+
+.content{
+width:70%;
+position:relative;
+background:white;
+padding-bottom:50px;
+color:black;
+}
+
+
+/* ======================
+BOUTONS
+====================== */
+
+.top-buttons{
+display:flex;
+justify-content:space-between;
+padding:30px 120px 0 120px;
+}
+
+.btn-action,
+.btn-action-download-btn{
+
+padding:15px 30px;
+background:#4b4f1f;
+color:white;
+border:none;
+border-radius:40px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-action:hover,
+.btn-action-download-btn:hover{
+background:#AEB784;
+color:#4b4f1f;
+transform:translateY(-4px);
+}
+
+
+/* ======================
+PHOTO
+====================== */
+
+.photo-container{
+position:absolute;
+top:180px; /* moved further down */
+left:-12%;
+width:200px;
+height:200px;
+border-radius:50%;
+overflow:hidden;
+border:6px solid white;
+z-index:2;
+margin-left: -60px;
+}
+
+.photo-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+/* ======================
+HEADER
+====================== */
+
+.top-header{
+background:#AEB784;
+width:110%;
+height:350px;
+margin-left:-10%;
+margin-top:60px;
+padding:45px 80px 80px 180px;
+border-radius:10px;
+}
+
+.top-header h1{
+font-size:32px;
+margin-bottom:8px;
+line-height:1.2;
+}
+
+.top-header h2{
+margin-bottom:15px;
+letter-spacing:2px;
+}
+
+.top-header p{
+line-height:1.6;
+}
+
+.top-header hr{
+
+width:250px;          /* longueur de la ligne */
+height:3px;           /* épaisseur */
+background:#4b4f1f;   /* couleur */
+border:none;
+
+margin:10px 0 20px 0;
+}
+
+/* ======================
+SECTIONS
+====================== */
+
+.section-content{
+padding:50px 90px;
+}
+
+.main-title{
+margin-bottom:30px;
+font-size:22px;
+}
+
+.experience{
+margin-bottom:45px;
+position:relative;
+}
+
+.date{
+position:absolute;
+right:-60px;
+top:0;
+font-size:14px;
+}
+
+.gold-text{
+color:#A4955B;
+margin-bottom:12px;
+}
+
+.experience ul{
+margin-top:12px;
+padding-left:22px;
+}
+
+.experience li{
+margin-bottom:10px;
+line-height:1.7;
+word-break:break-word;
+}
+
+
+/* ======================
+FORMATIONS
+====================== */
+
+.experiences{
+position:absolute;
+bottom:-10px;
+}
+
+.experiences ul{
+margin-top:12px;
+padding-left:22px;
+}
+
+.experiences li{
+margin-bottom:10px;
+line-height:1.7;
+}
+
+
+/* ======================
+RESPONSIVE TABLETTE
+====================== */
+
+@media (max-width:1024px){
+
+/* CONTENT avant SIDEBAR */
+
+.container{
+flex-direction:column;
+padding:20px;
+}
+
+.content{
+order:1;
+width:100%;
+}
+
+.sidebar{
+order:2;
+width:100%;
+padding:40px 20px;
+text-align:center;
+}
+
+
+/* PHOTO responsive */
+
+.photo-container{
+position:relative;
+top:0;
+left:50%;
+transform:translateX(-50%);
+margin-top:20px;
+margin-bottom:20px;
+width:160px;
+height:160px;
+}
+
+
+/* HEADER responsive */
+
+.top-header{
+width:100%;
+margin:0;
+height:auto;
+padding:40px;
+text-align:center;
+}
+
+.top-header h1,
+.top-header h2,
+.top-header p{
+margin-bottom:10px;
+}
+
+
+/* DATE responsive */
+
+.date{
+position:relative;
+right:auto;
+display:block;
+margin-bottom:6px;
+font-weight:bold;
+}
+
+
+/* FORMATIONS */
+
+.experiences{
+position:relative;
+bottom:auto;
+margin-top:40px;
+}
+
+}
+
+
+/* ======================
+SMARTPHONE
+====================== */
+
+@media (max-width:600px){
+
+.section-content{
+padding:25px 20px;
+}
+
+.photo-container{
+width:140px;
+height:140px;
+}
+
+.top-header h1{
+font-size:26px;
+margin-bottom:8px; /* espace entre nom et métier */
+line-height:1.2;
+}
+
+.top-header h2{
+font-size:18px;
+margin-bottom:10px;
+}
+.top-header hr{
+margin:auto;
+margin-top:10px;
+margin-bottom:20px;
+}
+.main-title{
+font-size:20px;
+}
+
+}
