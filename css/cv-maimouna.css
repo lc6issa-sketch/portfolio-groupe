@@ -25,19 +25,7 @@ body {
     margin-bottom:20px;
 }
 
-/* style boutons */
 
-.btn{
-    padding:10px 20px;
-    background:#4A4F1D;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-.btn:hover {
-    background: #AEB784;
-    transform: scale(1.05);
-}
 /* header */
 .cv-container {
     width: 95%;
@@ -81,6 +69,8 @@ body {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 .intro p{
     font-size: 14px;
@@ -167,11 +157,18 @@ body {
 }
 
 /* animations*/
-
-.intro h2 {
-    position: relative;
-    display: inline-block;
+.btn{
+    padding:10px 20px;
+    background:#4A4F1D;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
+.btn:hover {
+    background: #AEB784;
+    transform: scale(1.05);
+}
+
 .right h4:hover::after {
     width: 100%;
 }
