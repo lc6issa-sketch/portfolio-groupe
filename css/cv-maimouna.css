@@ -8,24 +8,33 @@ body {
     background: linear-gradient(#AEB784,#4D513A,#4D513A);
 }
 /* les boutons */
+.cv-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px; 
+}
 .retour {
     margin-bottom: 10px;
-    margin-left: 230px;
     margin-top: 30px;
 }
 .telecharger {
     margin-bottom: 10px;
-    margin-right: 230px;
     margin-top: 30px;
 }
 
-.cv-buttons{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:20px;
+/* style boutons */
+.btn{
+    margin: 10px;
+    padding:10px 20px;
+    background:#4A4F1D;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
-
-
+.btn:hover {
+    background: #AEB784;
+    transform: scale(1.05);
+}
 /* header */
 .cv-container {
     width: 95%;
@@ -69,8 +78,6 @@ body {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;
-    position: relative;
-    display: inline-block;
 }
 .intro p{
     font-size: 14px;
@@ -157,18 +164,21 @@ body {
 }
 
 /* animations*/
-.btn{
-    padding:10px 20px;
-    background:#4A4F1D;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-.btn:hover {
-    background: #AEB784;
-    transform: scale(1.05);
-}
 
+.intro h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.intro h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6D7145;
+    transition: width 0.3s ease;
+}
 .right h4:hover::after {
     width: 100%;
 }
@@ -219,6 +229,12 @@ body {
     margin-right: 100px; 
     margin-left: 100px;
 }*/
+.retour {
+    margin-left: 230px;
+}
+.telecharger {
+    margin-right: 230px;
+}
 .header {
     flex-direction: row;
     text-align: left;
