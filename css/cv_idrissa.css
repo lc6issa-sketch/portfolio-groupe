@@ -485,9 +485,6 @@ body{
   background: #e74c3c;
 }
 
-.toast-info{
-  background: #3498db;
-}
 
 @keyframes slideIn{
   from{

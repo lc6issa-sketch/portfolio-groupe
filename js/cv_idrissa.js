@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Activer mode export
-    frame.classList.add("is-exporting");
 
     const opt = {
       margin: 0,
