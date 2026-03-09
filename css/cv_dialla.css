@@ -17,29 +17,28 @@ body {
   background-attachment: fixed;
 }
 
-.top-buttons{
-    display:flex;
- justify-content: space-between;
-    margin-bottom:20px;
-    gap: 10px;
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
 }
 
-
-
-button{
-    padding:10px 20px;
-    background:#4A4F1D;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-}
-button a{
+.btn {
+  padding: 10px 20px;
+  background: #4a4f1d;
+  color: white;
   text-decoration: none;
-  color:white ;
+  border-radius: 5px;
 }
-button:hover {
-    background: #AEB784;
-    transform: scale(1.05);
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background: #aeb784;
+  transform: scale(1.05);
 }
 
 .profil {
@@ -61,11 +60,11 @@ button:hover {
 .ronder_cercle_image {
   width: 240px;
   height: 200px;
-  border-radius:  80%;
+  border-radius: 80%;
   display: block;
   margin: 0px auto;
   max-width: 100%;
-  
+
   padding-top: 5px;
 }
 
@@ -86,7 +85,6 @@ button:hover {
   margin-left: 25px;
   flex: 1 !important;
   padding-left: -5px;
-  
 }
 .container_right {
   padding: 5px;
@@ -190,7 +188,7 @@ div {
   border: 3px solid black;
   position: absolute;
   top: 0px;
-  left: -45px;
+  left: -43px;
   padding: 10px;
   background-color: white;
 }
