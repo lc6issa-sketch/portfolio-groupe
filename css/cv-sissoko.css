@@ -64,7 +64,7 @@ body {
     transform: scale(1.2);
     transition: all ease-in 0.2s;
 }
-.btn-retour a{
+button a{
     color: #fff;
     text-decoration: none;
 }
