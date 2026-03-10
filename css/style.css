@@ -278,6 +278,7 @@ nav a:active{
   opacity:0;
   transition: opacity .4s ease;
   z-index: 1;
+  pointer-events: none;
 }
 
 .card:hover::before{ opacity:1; }
