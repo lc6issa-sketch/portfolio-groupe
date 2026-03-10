@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scale: 2,
         scrollX: 0,
         scrollY: 0,
-        backgroundColor: "#ffffff"
+        backgroundColor: "#AEB784"
       },
 
       jsPDF: {
