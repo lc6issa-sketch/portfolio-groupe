@@ -116,6 +116,8 @@ body{
   background: var(--right-top);
   border-radius: var(--card-radius);
   z-index: 2;
+  border-radius: 5px 0 0 5px;
+ 
 }
 
 .hdr-photo{
@@ -194,7 +196,7 @@ body{
 
 .hdr-desc{
   margin:0;
-  font-size:14px;
+  font-size: clamp(13px, 2.5vw, 14px);
   line-height:1.6;
   color:#333;
 
@@ -429,19 +431,26 @@ body{
   -webkit-appearance: none;
 }
 
-/* Responsive */
-@media (max-width: 600px){
-  .site-footer{
-    padding: 14px 10px;
-  }
-  .site-footer p{
-    font-size: 14px;
-  }
+.site-footer{
+  width: 100%;
+  background: #3f4220; /* vert foncé proche de ton image */
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+  padding: 18px 12px;
+}
+
+.site-footer p{
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: .4px;
+  font-size: 16px;
+  width: 100%;
 }
 
 #toast-container{
   position: fixed;
-  top: 70px;
+  top: 20px;
   right: 20px;
   z-index: 9999;
   display: flex;
@@ -468,6 +477,9 @@ body{
   background: #e74c3c;
 }
 
+.toast-info{
+  background: #3498db;
+}
 
 @keyframes slideIn{
   from{
@@ -480,30 +492,6 @@ body{
   }
 }
 
-@media (max-width: 600px){
-  .nav{
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav .back,
-  .nav .download{
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px){
-  .nav{
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .nav .back,
-  .nav .download{
-    width: 100%;
-    justify-content: center;
-  }
-}
 
 @media (hover: none){
   .nav .back:hover,
@@ -617,23 +605,26 @@ body{
   }
 
   .xp-date{ white-space:normal; }
-}
 
-@media (max-width: 600px){
+  .hdr-desc{
+    max-width: 320px;   
+    font-size: 13px;    
+    line-height: 1.5;
+    margin-top: 6px;
+  }
+
+  .hdr-right{
+    top: 170px;
+  }
 
   body{
     padding: 0;
-  }
-
-  .nav{
-    padding: 14px 18px;
   }
 
   .cv-frame{
     padding: 10px;
   }
 
-  /* réduire un peu les espacements sans toucher le style */
   .right-section{
     padding: 14px 18px 0;
   }
@@ -646,4 +637,18 @@ body{
   .xp-date{
     white-space: normal;
   }
+
+  .nav{
+    padding: 14px 18px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .nav .back,
+  .nav .download{
+    width: 100%;
+    justify-content: center;
+  }
+
 }
+
