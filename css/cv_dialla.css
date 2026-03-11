@@ -16,6 +16,31 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #4a4f1d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background: #aeb784;
+  transform: scale(1.05);
+}
+
 .profil {
   background-color: #aeb784;
   width: 100%;
@@ -35,11 +60,11 @@ body {
 .ronder_cercle_image {
   width: 240px;
   height: 200px;
-  border-radius:  80%;
+  border-radius: 80%;
   display: block;
   margin: 0px auto;
   max-width: 100%;
-  
+
   padding-top: 5px;
 }
 
@@ -60,7 +85,6 @@ body {
   margin-left: 25px;
   flex: 1 !important;
   padding-left: -5px;
-  
 }
 .container_right {
   padding: 5px;
@@ -71,9 +95,9 @@ body {
   padding-top: 30px;
 }
 #education hr {
-  width: 65%;
+  width: 40%;
   margin-top: -7px;
-  margin-left: 80px;
+  margin-left: 150px;
 }
 #education p {
   margin-top: 20px;
@@ -85,15 +109,15 @@ body {
 #Competences_cles hr {
   width: 40%;
   margin-top: -7px;
-  margin-left: 160px;
+  margin-left: 150px;
 }
 #langues {
   padding-top: 20px;
 }
 #langues hr {
-  width: 65%;
+  width: 40%;
   margin-top: -7px;
-  margin-left: 85px;
+  margin-left: 150px;
 }
 #contact {
   padding-top: 20px;
@@ -101,9 +125,9 @@ body {
 }
 
 #contact hr {
-  width: 65%;
+  width: 40%;
   margin-top: -7px;
-  margin-left: 85px;
+  margin-left: 150px;
 }
 #contact i {
   padding: 5px;
@@ -126,21 +150,20 @@ ul {
 #experience h3 {
   margin-top: 15px;
 }
-#experience hr {
-  width: 75%;
-  margin-top: -15px;
-  margin-left: 95px;
-  color: rgb(4, 0, 0);
-}
 
 #profil_info h2 {
   margin-top: 40px;
   margin-bottom: 10px;
 }
 #profil_info hr {
-  width: 75%;
+  width: 70%;
   margin-top: -15px;
-  margin-left: 95px;
+  margin-left: 25%;
+}
+#experience hr {
+  width: 70%;
+  margin-top: -15px;
+  margin-left: 25%;
 }
 #profil_info p {
   padding-top: 20px;
@@ -164,21 +187,30 @@ div {
   border: 3px solid black;
   position: absolute;
   top: 0px;
-  left: -45px;
+  left: -43px;
   padding: 10px;
   background-color: white;
 }
-
+.experience_title {
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
 @media (max-width: 768px) {
   .container {
+    width: 100%;
+    /*max-width: 900px;*/
     flex-direction: column;
     gap: 0;
   }
 
   .container_left,
   .container_right {
-    width: 100%;
     margin: 0;
+
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
