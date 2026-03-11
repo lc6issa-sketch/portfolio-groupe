@@ -1,4 +1,4 @@
-name: Deploy static site
+name: Deploiement du portfolio sur Github Pages
 
 on:
   push:
