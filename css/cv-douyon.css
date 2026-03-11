@@ -40,7 +40,17 @@ background:white;
     background: #AEB784;
     transform: scale(1.05);
 }
-
+ .message{
+display:none;
+position:fixed;
+top:20px;
+right:20px;
+background:#4b4f1c;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
 
 .left{
 width:35%;
