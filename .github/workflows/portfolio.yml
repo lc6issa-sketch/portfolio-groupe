@@ -1,10 +1,10 @@
-name: Deploiement du portfolio sur GitHub Pages
+name: Déploiement du portfolio sur GitHub Pages
 
 on:
   push:
     branches:
       - main
-      
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,11 +13,11 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout du code
-        uses: actions/checkout@v3
+      - name: Télécharger le code
+        uses: actions/checkout@v4
 
-      - name: Déploiement vers GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Déployer le site
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
