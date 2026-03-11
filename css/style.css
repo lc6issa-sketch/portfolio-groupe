@@ -181,7 +181,7 @@ nav a:active{
 .shape-diamond{
   width: 78px;
   height: 78px;
-  left: 18%;
+  left: 10%;
   top: 62px;
   transform: rotate(45deg);
   border-radius: 10px;
@@ -210,7 +210,7 @@ nav a:active{
 .shape-circle{
   width: 88px;
   height: 88px;
-  right: 16%;
+  right: 10%;
   top: 52px;
   border-radius: 999px;
   background: #F0A300;
