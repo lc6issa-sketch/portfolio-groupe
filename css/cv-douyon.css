@@ -16,6 +16,16 @@ padding:40px;
     width:900px;
     margin:auto;
 }
+.message{
+display:none;
+position:fixed;
+top:20px;
+right:20px;
+background:#4b4f1c;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+}
 .cv-container{
 display:flex;
 background:white;
@@ -36,6 +46,7 @@ background:white;
     color:white;
     text-decoration:none;
     border-radius:5px;
+    height: 40px;
 }
 .btn:hover {
     background: #AEB784;
@@ -69,8 +80,10 @@ font-size:18px;
     margin-bottom: 8px;
 }
 .left p{
-font-size:14px;
+font-size:15px;
 margin-bottom:8px;
+margin-left: 1%;
+gap: 5%;
 }
 
 .left ul{
@@ -79,7 +92,7 @@ margin-left:15px;
 
 .left li{
 margin-bottom:6px;
-font-size:14px;
+font-size:15px;
 }
 
 .photo{
@@ -159,14 +172,14 @@ padding:35px 40px;
 .section h2::after{
     content:"";
     display:block;
-    width:100px; /* longueur de la bordure */
+    width:150px; /* longueur de la bordure */
     height:4px;
     background:#4b4f1c;
     margin-top:5px;
 }
 
 .section ul{
-margin-left:20px;
+margin-left:15px;
 margin-top:10px;
 }
 
@@ -174,9 +187,7 @@ margin-top:10px;
 margin-bottom:8px;
 }
 
-.section p{
-margin-bottom:10px;
-}
+
 
 .cv-container{
     max-width:900px;

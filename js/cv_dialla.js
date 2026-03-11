@@ -27,7 +27,7 @@ ul li { margin-left: 35px; padding-top: 10px; }
   const blob = new Blob([fullHtml], { type: "text/html" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "Mon_CV.pdf";
+  a.download = "Mon_CV.html";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
