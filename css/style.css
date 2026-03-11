@@ -172,10 +172,11 @@ nav a:active{
 
 .shape{
   position: absolute;
-  opacity: .16;
+  opacity: .8;
+  filter: blur(1px);
   animation: spin 8s linear infinite;
-  background: rgba(0,0,0,.55);
 }
+
 
 .shape-diamond{
   width: 78px;
@@ -184,8 +185,10 @@ nav a:active{
   top: 62px;
   transform: rotate(45deg);
   border-radius: 10px;
+  background: #F0A300;
   animation-duration: 9s;
 }
+
 
 .shape-triangle{
   width: 0;
@@ -194,12 +197,15 @@ nav a:active{
   top: 58px;
   transform-origin: 50% 60%;
   background: transparent;
+
   border-left: 44px solid transparent;
   border-right: 44px solid transparent;
-  border-bottom: 78px solid rgba(0,0,0,.55);
-  opacity: .12;
+  border-bottom: 78px solid #98188C;
+
+  opacity: .8;
   animation: spinTriangle 11s linear infinite;
 }
+
 
 .shape-circle{
   width: 88px;
@@ -207,7 +213,9 @@ nav a:active{
   right: 16%;
   top: 52px;
   border-radius: 999px;
+  background: #F0A300;
   animation-duration: 10s;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes spin{
@@ -218,6 +226,18 @@ nav a:active{
 @keyframes spinTriangle{
   from{ transform: translateX(-50%) rotate(0deg); }
   to  { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 
