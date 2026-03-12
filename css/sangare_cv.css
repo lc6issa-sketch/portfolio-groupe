@@ -315,18 +315,14 @@ body{
 
     .container {
         grid-template-columns: 1fr; 
-        margin-bottom: 0px;
-        
     }
 
     .sidebar {
         order: 2;
-        margin-right: 10px;
     }
 
     .main {
         order: 3;
-        
     }
 
     .profilContainer {
