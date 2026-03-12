@@ -287,11 +287,12 @@ button a{
 @media (max-width: 1000px) {
     body { padding: 20px; }
 
-    .container {
+    .containers {
         width: 100%;
         min-height: auto;
         flex-direction: column;
         box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        margin: 20px;
     }
 
     .sidebar {
@@ -322,10 +323,60 @@ button a{
     .contenu { padding: 20px; }
 }
 
+@media (max-width: 768px) {
+    body { padding: 10px; }
+
+    .containers {
+        margin: 10px;
+    }
+
+    .sidebar {
+        padding: 140px 15px 15px 15px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .contenu {
+        padding: 15px;
+    }
+
+    .profile {
+        width: 140px;
+        height: 140px;
+        margin: -70px auto 15px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .section-titre {
+        font-size: 20px;
+    }
+
+    .btn-télécharger,
+    .btn-retour {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 480px) {
+    .containers { margin: 5px; }
     .profile { width: 120px; height: 120px; margin: -60px auto 12px; }
     .sidebar { padding: 120px 12px 12px 12px; }
     .name { font-size: 24px; }
     .title { font-size: 16px; }
     .section-titre { font-size: 18px; }
+    .btn-télécharger,
+    .btn-retour {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
 }
