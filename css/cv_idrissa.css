@@ -252,7 +252,11 @@ body{
   font-size:13.5px;
   line-height:1.65;
 }
-.bullets li{ margin:4px 0; }
+
+.bullets li{
+   margin:4px 0;
+   white-space: nowrap;
+   }
 
 .langs{
   list-style:none;
@@ -452,21 +456,6 @@ body{
   gap: 10px;
 }
 
-.toast{
-  min-width: 260px;
-  padding: 14px 18px;
-  border-radius: 10px;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.2);
-  animation: slideIn .35s ease;
-}
-
-
-.toast-success{
-  background: #2ecc71;
-}
 
 
 @keyframes slideIn{
@@ -489,8 +478,7 @@ body{
   }
    }
 
-.toast-success{ background: #2ecc71; }
-.toast-error{ background: #e74c3c; }
+
 
 @keyframes slideIn{
   from{ transform: translateX(120%); opacity:0; }
