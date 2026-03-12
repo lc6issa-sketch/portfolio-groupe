@@ -421,6 +421,22 @@ body{
         width: 95%;
         min-height: auto;
     }
+
+    .spacename{
+    order: 1;
+    }
+
+
+
+    
+
+   .circular{
+    order: 0;
+    }
+
+    .centrale{
+    order: 3;
+}
     
     /* Passage en layout vertical */
     .leftside {
