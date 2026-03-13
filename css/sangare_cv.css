@@ -348,10 +348,12 @@ body{
 
     .contain {
         padding-top: 20px;
+        padding-bottom: 40px;
     }
 
     .sidebar-section {
         padding-top: 20px;
+        margin-top: 10px;
     }
 
     .done {
@@ -364,5 +366,8 @@ body{
         padding-right: 20px;
         font-size: 18px;
     }
+    .last {
+    padding-bottom: 40px;
+}
 
 }

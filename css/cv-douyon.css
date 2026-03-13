@@ -6,7 +6,6 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#e9e9e9;
 display:flex;
 justify-content:center;
 padding:40px;
@@ -15,6 +14,16 @@ padding:40px;
 .page{
     width:900px;
     margin:auto;
+}
+.message{
+display:none;
+position:fixed;
+top:20px;
+right:20px;
+background:#4b4f1c;
+color:white;
+padding:10px 20px;
+border-radius:5px;
 }
 .cv-container{
 display:flex;
@@ -28,7 +37,9 @@ background:white;
     margin-bottom:20px;
 }
 
-/* style boutons */
+
+
+
 
 .btn{
     padding:10px 20px;
@@ -36,12 +47,23 @@ background:white;
     color:white;
     text-decoration:none;
     border-radius:5px;
+    height: 40px;
 }
 .btn:hover {
     background: #AEB784;
     transform: scale(1.05);
 }
-
+ .message{
+display:none;
+position:fixed;
+top:20px;
+right:20px;
+background:#4b4f1c;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
 
 .left{
 width:35%;
@@ -69,8 +91,10 @@ font-size:18px;
     margin-bottom: 8px;
 }
 .left p{
-font-size:14px;
+font-size:15px;
 margin-bottom:8px;
+margin-left: 1%;
+gap: 5%;
 }
 
 .left ul{
@@ -79,7 +103,7 @@ margin-left:15px;
 
 .left li{
 margin-bottom:6px;
-font-size:14px;
+font-size:15px;
 }
 
 .photo{
@@ -105,7 +129,7 @@ border:6px solid white;
 
 .right{
 width:65%;
-background:#f3f3f3;
+background : white;
 }
 
 .header{
@@ -114,6 +138,7 @@ background:#a8ac7c;
 padding:40px;
 margin-left: -30%;
 border-radius:4%;
+
 }
 
 .header h1{
@@ -129,11 +154,11 @@ margin-left: 25%;
     position: relative;
     padding-bottom:5px;
 }
-
+/* L*/
 .header h2::after{
     content:"";
     display:block;
-    width:80px; /* longueur de la bordure */
+    width:80px; /* largeur de la bordure */
     height:3px;
     background:#4b4f1c;
     margin-top:5px;
@@ -159,14 +184,14 @@ padding:35px 40px;
 .section h2::after{
     content:"";
     display:block;
-    width:100px; /* longueur de la bordure */
+    width:150px; /* longueur de la bordure */
     height:4px;
     background:#4b4f1c;
     margin-top:5px;
 }
 
 .section ul{
-margin-left:20px;
+margin-left:15px;
 margin-top:10px;
 }
 
@@ -174,9 +199,7 @@ margin-top:10px;
 margin-bottom:8px;
 }
 
-.section p{
-margin-bottom:10px;
-}
+
 
 .cv-container{
     max-width:900px;
