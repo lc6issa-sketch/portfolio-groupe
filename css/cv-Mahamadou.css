@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif
 }
-
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 body {
-    background: #f0f2f5;
+    background: #AEB784;
     min-height: 100vh;
     padding: 20px;
 }
@@ -14,8 +18,8 @@ body {
 /* Boutons */
 .top-buttons {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+justify-content: center;
+    gap: 885px;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
@@ -25,26 +29,29 @@ body {
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    background: #2c3e50;
+    background: #41431B;
     color: #fff;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 14px;
+    gap: 398px;
 }
 
 .btn:hover {
-    background: #34495e;
+    background: #E3DBBB;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
 }
 
 .btn-pdf {
-    background: #2c3e50;
+    background: #41431B;
+    
 }
 
 .btn-pdf:hover {
-    background: #c0392b;
+    background: #E3DBBB;
 }
 
 /* CV Container */
@@ -56,6 +63,7 @@ body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
+    height: 296mm;
 }
 
 /* Partie gauche */
@@ -83,7 +91,7 @@ body {
 .photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
 }
 
 .left-content {
@@ -110,9 +118,9 @@ body {
     line-height: 1.4;
 }
 
-.left-content ul {
+/* .left-content ul {
     list-style: none;
-}
+} */
 
 .left-content ul li {
     position: relative;
@@ -120,7 +128,7 @@ body {
 }
 
 .left-content ul li::before {
-    content: "▹";
+    content: "";
     position: absolute;
     left: 0;
     color: #AEB784;
@@ -141,7 +149,7 @@ body {
     border-radius: 15px;
     position: relative;
     margin-bottom: 30px;
-    margin-right: -39px;
+    margin-right: -45px;
     margin-left: -189px;
     padding-left: 80px;
     padding-right: 30px;
@@ -231,124 +239,26 @@ section ul li strong {
     list-style: disc;
     color: #666;
 }
+@media (max-width: 768px) {
+  .cv {
+    width: 100%;
+    /*max-width: 900px;*/
+    flex-direction: column;
+    gap: 0;
+  }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+  .left-content,
+   .right {
+    margin: 0;
 
-    .top-buttons {
-        position: fixed;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1000;
-        gap: 8px;
-    }
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .right {
+    margin: 0;
 
-    .btn {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
-    .cv {
-        flex-direction: column;
-        margin-top: 60px;
-    }
-
-    .left {
-        width: 100%;
-        padding: 25px 20px;
-    }
-
-    .photo {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 15px;
-    }
-
-    .left-content h3 {
-        margin-top: 20px;
-        font-size: 13px;
-    }
-
-    .right {
-        width: 100%;
-        padding: 25px 20px;
-    }
-
-    /* Reset top-card pour mobile */
-    .top-card {
-        margin: 0 0 25px 0;
-        padding: 20px;
-    }
-
-    .top-card h1 {
-        font-size: 22px;
-    }
-
-    .top-card h2 {
-        font-size: 12px;
-    }
-
-    section h2 {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .top-card h1 {
-        font-size: 18px;
-    }
-
-    .photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .left-content p,
-    .left-content li {
-        font-size: 12px;
-    }
-
-    section ul li {
-        font-size: 13px;
-    }
-}
-
-/* Impression PDF */
-@media print {
-    body {
-        background: white;
-        padding: 0;
-    }
-
-    .top-buttons {
-        display: none;
-    }
-
-    .cv {
-        box-shadow: none;
-        max-width: 100%;
-    }
-
-    .left {
-        background: #41431B !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-
-    .top-card {
-        background: #AEB784 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-
-    section h2 {
-        border-bottom-color: #AEB784 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-}
-
+ }

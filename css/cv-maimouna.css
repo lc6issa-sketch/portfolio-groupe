@@ -8,35 +8,33 @@ body {
     background: linear-gradient(#AEB784,#4D513A,#4D513A);
 }
 /* les boutons */
+.cv-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px; 
+    padding: 0 15px;
+}
 .retour {
-    color: black;
     margin-bottom: 10px;
-    border: 3px solid #6D7145;
+    margin-top: 30px;
 }
 .telecharger {
-    color: black;
     margin-bottom: 10px;
-    border: 3px solid #6D7145;
+    margin-top: 30px;
 }
-.cv-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin: 20px auto;
-    width: 95%;
-    max-width: 900px;
+
+/* style boutons */
+.btn{
+    margin: 10px;
+    padding:10px 20px;
+    background:#4A4F1D;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
-.btn {
-    display: block;
-    border-radius: 18px;
-    transition: 0.3s ease;
-    font-size: 16px;
-    width: 100%;              
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-weight: bold;
+.btn:hover {
+    background: #AEB784;
+    transform: scale(1.05);
 }
 /* header */
 .cv-container {
@@ -44,25 +42,23 @@ body {
     max-width: 900px;
     margin: 20px auto;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    line-height: 20px;
-    padding-top: 50px;
+    line-height: 20px;   
 }
 .header {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #E3DBBB;
-    padding: 30px;
+    background-color: #AEB784;
+    padding: 30px;  
 }
 .photo img {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
     margin: 0 auto 20px;
     display: block;
     border-radius: 50%;
-    border: 5px solid #5e8c61;
+    border: 5px solid white;
     object-fit: cover;
 }
 .intro {
@@ -72,19 +68,25 @@ body {
     color: black;
     margin-bottom: 8px;
     font-size: clamp(24px, 6vw, 38px);
-    line-height: 1.2;
-    word-break: normal;
-    overflow-wrap: break-word;
-    text-align: left;
+    margin-left: 0px;
 }
 .intro h2 {
     color: black;
+    margin-top: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
     margin-bottom: 30px;
-    text-align: left;
+    margin-left: 0px;
 }
+
 .intro p{
     font-size: 14px;
-    text-align: left;
+    margin-left: 0px;
+}
+.intro h1,
+.intro h2,
+.intro p{
+    text-align:left;
 }
 /* main */
 .main {
@@ -92,16 +94,13 @@ body {
     flex-direction: column;
 }
 
-/* colonne gauche */
+/* colonne gauche*/
 .left {
-    width: 100%;
-    background-color: #AEB784;
+    background-color: #41431B;
     padding: 25px;
-    color: black;
-    margin-top: 0px;
-}
-#left {
+    color: white;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 #left p{
     font-size: 14px;
@@ -110,11 +109,11 @@ body {
     margin-bottom: 13px;
     margin-top: 25px;
     font-size: 16px;
-    color: #6D7145;
     font-weight: bold;
 }
 .left li {
     margin-bottom: 5px;
+    margin-left: 17px;
     font-size: 14px;
 }
 /* colonne droite */
@@ -137,7 +136,9 @@ body {
     font-weight: bold;
     transition: transform 0.5s ease;
 }
-.experience span {
+.experience p {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
     color: #41431B;
 }
@@ -146,55 +147,53 @@ body {
     margin-left: 20px;
     font-size: 14px;
 }
-.formation p {
+.formation li {
     margin-bottom: 8px;
+    margin-left: 18px;
     font-size: 14px;
 }
-/* impressions*/
-@media print {
-
-    body {
-        background: white;
-    }
-
-    .cv-buttons {
-        display: none; 
-    }
-    }
-
+.ligne1 {
+  width: 160px;
+  border: none;
+  height: 3px;
+  background-color: #41431B;
+  margin-top: -7px;
+  margin-bottom: 14px;
+}
+.ligne2 {
+  width: 60px;
+  border: none;
+  height: 3px;
+  background-color: #41431B;
+  margin-top: -7px;
+  margin-bottom: 14px;
+}
 
 /* animations*/
-.retour:hover {
-    background-color: #E3DBBB;
-}
-.telecharger:hover {
-    background-color: #E3DBBB;
-}
 
 .intro h2 {
     position: relative;
-    display: inline-block;
+    display: block;
     cursor: pointer;
 }
 .intro h2::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -4px;
     width: 0;
     height: 2px;
     background-color: #6D7145;
     transition: width 0.3s ease;
 }
-.intro h2:hover::after {
+.right h4:hover::after {
     width: 100%;
 }
-.right h3 {
+.right h4 {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
-.right h3::after {
+.right h4::after {
     content: "";
     position: absolute;
     left: 0;
@@ -204,7 +203,7 @@ body {
     background-color: #6D7145;
     transition: width 0.3s ease;
 }
-.right h3:hover::after {
+.right h4:hover::after {
     width: 100%;
 }
 .left h3 {
@@ -227,15 +226,14 @@ body {
 }
 /*les media queries*/  
 @media (min-width: 992px) {
-.cv-buttons {
-    flex-direction: row;
-    justify-content: flex-end;
+.cv-container{
+        padding-top: 50px;
+    }
+.retour {
+    margin-left: 230px;
 }
-.btn {
-    width: auto;
-    min-width: 180px;
-    margin-right: 160px; 
-    margin-left: 100px;
+.telecharger {
+    margin-right: 230px;
 }
 .header {
     flex-direction: row;
@@ -245,19 +243,31 @@ body {
     position: relative;
     left: -40px;
     margin-right: -40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     }
+
+.intro h1,
+.intro h2,
+.intro p,
+.ligne1{
+    margin-left: 27px;
+}
+
 .intro {
-    margin-left: 90px;
+    margin-left: 10px;
     }
 .main {
     flex-direction: row;
     }
 .left {
     width: 30%;
-    margin-top: -350px;
+    margin-top: -315px;
+    margin-left: 5px;
     }
 #left {
-    margin-top: 370px;
+    margin-top: 342px;
+    
     }
 .right {
     width: 65%;
@@ -266,18 +276,46 @@ body {
     margin-left: -140px;
     margin-right: 40px;
     }
-.intro {
-    margin-left: 10px;
-    }
-.cv-buttons {
-    flex-direction: row;
-    justify-content: center;
-    }
-.btn {
-    width: auto;
-    min-width: 180px;
-    }
+
 }
+/* impressions*/
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header,
+  .main {
+    flex-direction: row; /* forcer les colonnes à rester côte à côte */
+    flex-wrap: nowrap;   /* pas de retour à la ligne */
+  }
+  .left{
+    margin-top: -315px; 
+    line-height: 15px;
+  }
+  .header{
+    position: relative;
+    margin-left: 120px;
+    left: -40px;
+    margin-right: -40px;
+    line-height: 15px;
+  }
+  #left {
+    margin-top: 342px;
+    }
+  .photo img{
+    margin-left: -90px;
+    margin-right: 40px;
+  }
+    body {
+        background: white;
+    }
+
+    .cv-buttons {
+        display: none; 
+    }
+    }
     
 
 

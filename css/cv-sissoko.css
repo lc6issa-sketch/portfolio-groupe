@@ -68,7 +68,7 @@ body {
     transform: scale(1.2);
     transition: all ease-in 0.2s;
 }
-button a{
+.btn-retour a{
     color: #fff;
     text-decoration: none;
 }
@@ -298,7 +298,6 @@ button a{
         min-height: auto;
         flex-direction: column;
         box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-        margin: 20px;
     }
 
     .sidebar {
@@ -327,50 +326,6 @@ button a{
     }
 
     .contenu { padding: 20px; }
-}
-
-@media (max-width: 768px) {
-    body { padding: 10px; }
-
-    .containers {
-        margin: 10px;
-    }
-
-    .sidebar {
-        padding: 140px 15px 15px 15px;
-    }
-
-    .header {
-        padding: 15px;
-    }
-
-    .contenu {
-        padding: 15px;
-    }
-
-    .profile {
-        width: 140px;
-        height: 140px;
-        margin: -70px auto 15px;
-    }
-
-    .name {
-        font-size: 28px;
-    }
-
-    .title {
-        font-size: 18px;
-    }
-
-    .section-titre {
-        font-size: 20px;
-    }
-
-    .btn-télécharger,
-    .btn-retour {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 480px) {
