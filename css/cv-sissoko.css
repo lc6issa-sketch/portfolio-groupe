@@ -33,13 +33,17 @@ body {
     top: -40px;
     right: 10px;
     z-index: 10;
-    background-color: #AEB784;
+    background-color: #4b5333;
     color: #fff;
     border: none;
     padding: 10px 20px;
     margin-top: -20px;
     border-radius: 5px;
     cursor: pointer;
+}
+.btn-télécharger a{
+    color: #fff;
+    text-decoration: none;
 }
 .btn-télécharger:hover{
     background-color: #8d9c5d;
@@ -288,7 +292,9 @@ button a{
     body { padding: 20px; }
 
     .containers {
+    .containers {
         width: 100%;
+        margin: 0;
         min-height: auto;
         flex-direction: column;
         box-shadow: 0 3px 10px rgba(0,0,0,0.15);
@@ -369,6 +375,8 @@ button a{
 
 @media (max-width: 480px) {
     .containers { margin: 5px; }
+    body { padding: 10px; }
+    .containers { margin: 10px; }
     .profile { width: 120px; height: 120px; margin: -60px auto 12px; }
     .sidebar { padding: 120px 12px 12px 12px; }
     .name { font-size: 24px; }
@@ -378,5 +386,12 @@ button a{
     .btn-retour {
         padding: 6px 12px;
         font-size: 12px;
+    }
+    .header { padding: 15px; }
+    .contenu { padding: 15px; }
+    .btn-télécharger, .btn-retour {
+        padding: 8px 12px;
+        font-size: 12px;
+        top: 10px;
     }
 }
