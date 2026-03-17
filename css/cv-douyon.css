@@ -64,10 +64,10 @@ background:white;
 display:flex;
 align-items:center;
 background:#a8ac7c;
-width: 56%;
+width: 34.5%;
 padding:30px;
-margin-left: 11%;
-margin-top: 5%;
+margin-left: 10%;
+margin-top: 4%;
 position: absolute;
 border-radius:3%;
 z-index: 2;
@@ -75,7 +75,7 @@ height: 250px;
 }
 
 .photo{
-width:340px;
+width:380px;
 height:200px;
 border-radius:50%;
 overflow:hidden;
