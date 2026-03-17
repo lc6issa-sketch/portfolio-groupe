@@ -408,42 +408,74 @@ body{
 @media screen and (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
-        margin-left: 20px;
-        margin-right: 20px;
+        justify-content: center;
+        margin: 20px 10px;
         gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .nav .back,
+    .nav .download {
+        margin: 0;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .nav .back {
+        margin-left: 0;
     }
     
     .nav .download {
         margin-left: 0;
     }
     
+    .nav button {
+        width: 100%;
+        max-width: 250px;
+    }
+    
     .Folio {
         width: 95%;
         min-height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
     }
 
-    .spacename{
-    order: 1;
-    }
-
-
-
-    
-
-   .circular{
-    order: 0;
-    }
-
-    .centrale{
-    order: 3;
-}
-    
-    /* Passage en layout vertical */
-    .leftside {
+    /* Réorganisation de l'ordre des éléments pour mobile */
+    .Folio .circular {
         position: relative !important;
+        order: 0;
+        margin: -60px auto 20px !important;
+        width: 150px;
+        height: 150px;
+    }
+
+    .Folio .spacename {
+        position: relative !important;
+        order: 1;
+        margin: 20px auto !important;
+        width: 90% !important;
+        height: auto !important;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .Folio .leftside {
+        position: relative !important;
+        order: 2;
         width: 100% !important;
         min-height: auto !important;
         border-radius: 20px 20px 0 0 !important;
+    }
+
+    .Folio .centrale {
+        position: relative !important;
+        order: 3;
+        width: 100% !important;
+        margin: 0 !important;
+        min-height: auto !important;
+        padding: 20px;
     }
     
     .subtitle {
@@ -454,15 +486,6 @@ body{
         padding-bottom: 30px;
     }
     
-    .spacename {
-        position: relative !important;
-        margin: 20px auto !important;
-        width: 90% !important;
-        height: auto !important;
-        padding: 20px;
-        text-align: center;
-    }
-    
     .spacename h1,
     .spacename h2,
     .spacename p {
@@ -470,24 +493,9 @@ body{
         justify-content: center;
     }
     
-    .circular {
-        position: relative !important;
-        margin: -80px auto 20px !important;
-        width: 150px;
-        height: 150px;
-    }
-    
     .circular .profil {
         width: 149px;
         height: 149px;
-    }
-    
-    .centrale {
-        position: relative !important;
-        width: 100% !important;
-        margin: 0 !important;
-        min-height: auto !important;
-        padding: 20px;
     }
     
     .centrale p {
@@ -517,28 +525,44 @@ body{
     .nav {
         flex-direction: column;
         align-items: center !important;
-        margin: 20px 10px;
+        margin: 15px 10px;
     }
     
     .nav .back,
     .nav .download {
         width: 100%;
-        justify-content: center;
+        max-width: 280px;
+        margin: 5px 0;
+    }
+    
+    .nav .back {
+        margin-left: 0;
+    }
+    
+    .nav .download {
+        margin-left: 0;
+    }
+    
+    .nav button {
+        width: 100%;
+        padding: 12px 22px;
     }
     
     .Folio {
         width: 100%;
         border-radius: 0;
+        margin: 10px 0;
     }
     
     .circular {
-        width: 120px;
-        height: 120px;
+        width: 120px !important;
+        height: 120px !important;
+        margin-top: -40px !important;
     }
     
     .circular .profil {
-        width: 119px;
-        height: 119px;
+        width: 119px !important;
+        height: 119px !important;
     }
     
     .spacename {
@@ -571,7 +595,6 @@ body{
         font-size: 14px !important;
     }
     
-    
     .divcord .icon {
         width: 20px;
         height: 20px;
@@ -580,14 +603,24 @@ body{
 
 /* Très petits écrans (375px et moins) */
 @media screen and (max-width: 375px) {
+    .nav .back,
+    .nav .download {
+        max-width: 240px;
+    }
+    
+    .nav button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    
     .circular {
-        width: 100px;
-        height: 100px;
+        width: 100px !important;
+        height: 100px !important;
     }
     
     .circular .profil {
-        width: 99px;
-        height: 99px;
+        width: 99px !important;
+        height: 99px !important;
     }
     
     .spacename h1 {
@@ -634,7 +667,7 @@ img {
 }
 
 /* Amélioration du bouton de téléchargement sur mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
     .nav .download {
         margin-left: 0;
         width: auto;
@@ -647,7 +680,7 @@ img {
 }
 
 /* Ajustement des listes sur mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
     .li1, .li2, .li3, .li4 {
         flex-wrap: wrap;
         word-break: break-word;
