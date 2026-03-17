@@ -107,7 +107,7 @@ PHOTO
 
 .photo-container{
 position:absolute;
-top:180px; /* moved further down */
+top:130px; /* moved further down */
 left:-12%;
 width:200px;
 height:200px;
@@ -136,7 +136,9 @@ height:350px;
 margin-left:-10%;
 margin-top:60px;
 padding:45px 80px 80px 180px;
-border-radius:10px;
+
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 }
 
 .top-header h1{
