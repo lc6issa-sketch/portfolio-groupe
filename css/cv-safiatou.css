@@ -6,9 +6,9 @@
 }
 
 body {
-    /* background-color: #e9edf2; */
-    /* background: linear-gradient(#AEB784,#4D513A,#4D514A); */
-    background-color: red;
+   
+    background: linear-gradient(#AEB784,#4D513A,#4D514A);
+   
     padding: 40px 20px;
     justify-content: center;
     align-items: center;
