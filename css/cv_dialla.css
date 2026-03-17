@@ -39,6 +39,7 @@ body {
 .btn:hover {
   background: #aeb784;
   transform: scale(1.05);
+  border: none;
 }
 
 .profil {
