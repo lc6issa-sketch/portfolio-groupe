@@ -9,6 +9,7 @@ body{
 display:flex;
 justify-content:center;
 padding:40px;
+overflow-x: hidden;
 background:linear-gradient(#AEB784,#4D513A,#4D514A);
 }
 
@@ -56,6 +57,7 @@ border-radius:5px;
 
 .cv-container{
 background:white;
+position: relative;
 }
 
 /* photo + header */
@@ -64,9 +66,9 @@ background:white;
 display:flex;
 align-items:center;
 background:#a8ac7c;
-width: 34.5%;
+width: 80%;
 padding:30px;
-margin-left: 10%;
+margin-left: 20%;
 margin-top: 4%;
 position: absolute;
 border-radius:3%;
@@ -95,13 +97,13 @@ border:6px solid white;
 .header h1{
 font-size:28px;
 margin-bottom:10px;
-margin-left: 100px;
+margin-left: 60px;
 }
 
 .header h2{
 font-size:18px;
 margin-bottom:10px;
-margin-left: 100px;
+margin-left: 60px;
 }
 .header h2::after{
     content:"";
@@ -115,7 +117,7 @@ margin-left: 100px;
 
 .header p{
 line-height:1.6;
-margin-left: 100px;
+margin-left: 60px;
 }
 
 /* contenu */
