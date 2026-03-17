@@ -287,8 +287,8 @@ body {
 
   .header,
   .main {
-    flex-direction: row; /* forcer les colonnes à rester côte à côte */
-    flex-wrap: nowrap;   /* pas de retour à la ligne */
+    flex-direction: row; 
+    flex-wrap: nowrap;   
   }
   .left{
     margin-top: -315px; 
